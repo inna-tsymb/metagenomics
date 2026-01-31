@@ -14,9 +14,6 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
-# Output folders
-output/
-
 # Logs
 *.log
 
