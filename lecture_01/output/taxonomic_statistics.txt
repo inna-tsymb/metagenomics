@@ -1,0 +1,50 @@
+=== TAXONOMIC ANALYSIS REPORT ===
+Generated on: 2026-02-03 02:46:32.903923
+
+--- Species Mapping Report ---
+Saved mapping report to /Users/user/Documents/metagenomics/lecture_01/output/species_mapping_report.csv
+
+--- Data Dimensions ---
+Abundance (species x samples): (30, 400)
+Taxonomy: (30, 7)
+Merged: (30, 407)
+
+--- Top Phyla (Global Abundance) ---
+Phylum
+Bacteroidota         27.34%
+Bacillota_A          23.87%
+Bacillota            18.46%
+Bacillota_C          10.32%
+Actinomycetota        7.97%
+Pseudomonadota        6.10%
+Verrucomicrobiota     3.04%
+Spirochaetota         2.91%
+dtype: str
+
+--- Top 20 Genera (Mean Relative Abundance) ---
+Genus
+Bacteroides              0.1195
+Bifidobacterium          0.0797
+Lactobacillus            0.0462
+Ruminococcus_E           0.0411
+Dialister                0.0397
+Eubacterium_R            0.0396
+Enterococcus             0.0389
+Roseburia                0.0378
+Streptococcus            0.0370
+Prevotella               0.0368
+Turicibacter             0.0342
+Escherichia              0.0334
+Veillonella              0.0328
+Ruminococcus_D           0.0324
+Phocaeicola_A            0.0323
+Alistipes                0.0321
+Phascolarctobacterium    0.0307
+Akkermansia              0.0304
+Clostridium              0.0297
+Faecalibacterium         0.0295
+dtype: str
+
+--- Sunburst Plot ---
+Saved interactive HTML to taxa_2_sunburst.html
+

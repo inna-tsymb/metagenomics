@@ -1,0 +1,31 @@
+2026-02-03 02:25:57 - Starting Analysis...
+--- 1. Alpha Diversity by Sex ---
+2026-02-03 02:25:57 - Female Mean Shannon: 1.29
+2026-02-03 02:25:57 - Male Mean Shannon:   1.23
+2026-02-03 02:25:57 - Mann-Whitney U Test: p-value = 0.23786
+2026-02-03 02:25:57 - RESULT: No significant difference in diversity.
+2026-02-03 02:25:57 - 
+--- 2. Species correlation with Age ---
+2026-02-03 02:25:57 -                    Species       Rho  P_value
+          Prevotella copri  0.091877 0.066405
+         Dialister invisus  0.062559 0.211850
+     Eubacterium_R faecale -0.046411 0.354541
+   Ruminococcus_E bromii_B  0.042901 0.392143
+   Bifidobacterium bifidum  0.030545 0.542440
+    Bifidobacterium longum -0.029636 0.554521
+ Lactobacillus acidophilus -0.028302 0.572500
+     Enterococcus faecalis -0.018084 0.718417
+Streptococcus thermophilus  0.014626 0.770576
+    Roseburia intestinalis  0.002128 0.966156
+2026-02-03 02:25:57 - 
+--- 3. Core Microbiome Analysis ---
+2026-02-03 02:25:57 - Total Species: 30
+2026-02-03 02:25:57 - Core Species (>50% prevalence): 0
+2026-02-03 02:25:57 - List of Core Species: 
+2026-02-03 02:25:57 - 
+Strict Core (>90%) Comparison:
+2026-02-03 02:25:57 - Shared by both sexes: 0
+2026-02-03 02:25:57 - Unique to Females: 0 []
+2026-02-03 02:25:57 - Unique to Males:   0 []
+2026-02-03 02:25:57 - 
+Analysis Complete. Report saved.

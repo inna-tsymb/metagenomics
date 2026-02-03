@@ -1,0 +1,31 @@
+abundance_species,normalized_abundance,matched_taxa,matched_norm,match_method,match_score
+Bacteroides fragilis,bacteroides fragilis,Bacteroides fragilis,bacteroides fragilis,exact,1.0
+Faecalibacterium prausnitzii,faecalibacterium prausnitzii,Faecalibacterium prausnitzii,faecalibacterium prausnitzii,exact,1.0
+Scatocola faecipullorum,scatocola faecipullorum,Scatocola faecipullorum,scatocola faecipullorum,exact,1.0
+Ruminococcus_E bromii_B,ruminococcus e bromii b,Ruminococcus_E bromii_B,ruminococcus e bromii b,exact,1.0
+Bacteroides thetaiotaomicron,bacteroides thetaiotaomicron,Bacteroides thetaiotaomicron,bacteroides thetaiotaomicron,exact,1.0
+Prevotella copri,prevotella copri,Prevotella copri,prevotella copri,exact,1.0
+Akkermansia muciniphila,akkermansia muciniphila,Akkermansia muciniphila,akkermansia muciniphila,exact,1.0
+Phocaeicola_A sp900765575,phocaeicola a sp900765575,Phocaeicola_A sp900765575,phocaeicola a sp900765575,exact,1.0
+Bifidobacterium longum,bifidobacterium longum,Bifidobacterium longum,bifidobacterium longum,exact,1.0
+Lactobacillus acidophilus,lactobacillus acidophilus,Lactobacillus acidophilus,lactobacillus acidophilus,exact,1.0
+Escherichia coli,escherichia coli,Escherichia coli,escherichia coli,exact,1.0
+Streptococcus thermophilus,streptococcus thermophilus,Streptococcus thermophilus,streptococcus thermophilus,exact,1.0
+Enterococcus faecalis,enterococcus faecalis,Enterococcus faecalis,enterococcus faecalis,exact,1.0
+Veillonella parvula_A,veillonella parvula a,Veillonella parvula_A,veillonella parvula a,exact,1.0
+Phocaeicola dorei,phocaeicola dorei,Phocaeicola dorei,phocaeicola dorei,exact,1.0
+Ruminococcus_D bicirculans,ruminococcus d bicirculans,Ruminococcus_D bicirculans,ruminococcus d bicirculans,exact,1.0
+Brachyspira sp934725525,brachyspira sp934725525,Brachyspira sp934725525,brachyspira sp934725525,exact,1.0
+Bifidobacterium bifidum,bifidobacterium bifidum,Bifidobacterium bifidum,bifidobacterium bifidum,exact,1.0
+Turicibacter sanguinis,turicibacter sanguinis,Turicibacter sanguinis,turicibacter sanguinis,exact,1.0
+Alistipes putredinis,alistipes putredinis,Alistipes putredinis,alistipes putredinis,exact,1.0
+Bacteroides uniformis,bacteroides uniformis,Bacteroides uniformis,bacteroides uniformis,exact,1.0
+Roseburia intestinalis,roseburia intestinalis,Roseburia intestinalis,roseburia intestinalis,exact,1.0
+Clostridium paraputrificum,clostridium paraputrificum,Clostridium paraputrificum,clostridium paraputrificum,exact,1.0
+Dialister invisus,dialister invisus,Dialister invisus,dialister invisus,exact,1.0
+Parabacteroides distasonis,parabacteroides distasonis,Parabacteroides distasonis,parabacteroides distasonis,exact,1.0
+Merdibacter merdipullorum,merdibacter merdipullorum,Merdibacter merdipullorum,merdibacter merdipullorum,exact,1.0
+Clostridium_A leptum,clostridium a leptum,Clostridium_A leptum,clostridium a leptum,exact,1.0
+Phascolarctobacterium faecium,phascolarctobacterium faecium,Phascolarctobacterium faecium,phascolarctobacterium faecium,exact,1.0
+Eubacterium_R faecale,eubacterium r faecale,Eubacterium_R faecale,eubacterium r faecale,exact,1.0
+Bacteroides ovatus,bacteroides ovatus,Bacteroides ovatus,bacteroides ovatus,exact,1.0
