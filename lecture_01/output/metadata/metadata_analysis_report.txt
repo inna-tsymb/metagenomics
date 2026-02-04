@@ -1,0 +1,52 @@
+=== METADATA ANALYSIS REPORT ===
+
+Samples analyzed: 400
+
+--- 1. Demographics Summary ---
+Sex Distribution:
+Sex
+F    294
+M    106
+
+Age Statistics (Entire Cohort):
+Mean: 50.22, Median: 50.50, Std: 12.91
+Min: 15.0, Max: 82.0
+
+--- 2. Age Comparison: Males vs Females ---
+Males (n=106): Mean Age = 49.56
+Females (n=294): Mean Age = 50.46
+
+Normality Check (Shapiro-Wilk):
+Males p=0.1142, Females p=0.2917
+  -> Data looks normal. Using Student's T-test.
+
+Test Result (T-test): p-value = 0.53952
+RESULT: No significant difference in age between sexes.
+
+--- 3. Microbiome Comparison: M vs F ---
+
+Most Prevalent Species (Top 5):
+Males:   ['Phocaeicola_A sp900765575', 'Merdibacter merdipullorum', 'Bifidobacterium bifidum', 'Roseburia intestinalis', 'Prevotella copri']
+Females: ['Lactobacillus acidophilus', 'Escherichia coli', 'Bifidobacterium bifidum', 'Ruminococcus_D bicirculans', 'Clostridium paraputrificum']
+Shared Prevalent: 1/5
+
+Most Abundant Species (Top 5):
+Males:   ['Phocaeicola_A sp900765575', 'Bifidobacterium bifidum', 'Bifidobacterium longum', 'Streptococcus thermophilus', 'Merdibacter merdipullorum']
+Females: ['Lactobacillus acidophilus', 'Ruminococcus_E bromii_B', 'Dialister invisus', 'Enterococcus faecalis', 'Eubacterium_R faecale']
+Shared Abundant: 0/5
+
+--- 4. Diversity Analysis (Preserved) ---
+Diversity Test (Mann-Whitney): p=0.23786
+
+--- 5. Age vs Species Correlation (Preserved) ---
+                   Species       Rho  P_value
+          Prevotella copri  0.091877 0.066405
+         Dialister invisus  0.062559 0.211850
+     Eubacterium_R faecale -0.046411 0.354541
+   Ruminococcus_E bromii_B  0.042901 0.392143
+   Bifidobacterium bifidum  0.030545 0.542440
+    Bifidobacterium longum -0.029636 0.554521
+ Lactobacillus acidophilus -0.028302 0.572500
+     Enterococcus faecalis -0.018084 0.718417
+Streptococcus thermophilus  0.014626 0.770576
+    Roseburia intestinalis  0.002128 0.966156

@@ -1,0 +1,18 @@
+=== TAXONOMIC TABLE ANALYSIS REPORT ===
+
+Loaded 30 species and 400 samples.
+
+--- Mapping Species to Taxonomy ---
+Successfully mapped 30 out of 30 species.
+
+--- Phylum Composition Statistics ---
+Top Phyla by Mean Relative Abundance:
+Phylum
+Bacteroidota         0.273441
+Bacillota_A          0.238719
+Bacillota            0.184555
+Bacillota_C          0.103197
+Actinomycetota       0.079685
+Pseudomonadota       0.060963
+Verrucomicrobiota    0.030364
+Spirochaetota        0.029076

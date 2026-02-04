@@ -1,0 +1,82 @@
+=== METADATA & COHORT ANALYSIS REPORT ===
+
+Samples analyzed: 400
+
+--- 1. Demographics Summary ---
+Sex Distribution:
+Sex
+F    294
+M    106
+
+Age Statistics (Entire Cohort):
+Mean: 50.22, Median: 50.50, Std: 12.91
+Min: 15.0, Max: 82.0
+
+--- 2. Age Comparison: Males vs Females ---
+Males (n=106): Mean Age = 49.56
+Females (n=294): Mean Age = 50.46
+
+Normality Check for Age (Shapiro-Wilk):
+Males p=0.1142, Females p=0.2917
+  -> Data looks normal. Using Student's T-test.
+
+Age Difference Test (T-test): p-value = 0.53952
+RESULT: No significant difference in age between sexes.
+
+--- 3. Microbiome Comparison: M vs F ---
+
+Most Prevalent Species (Top 5):
+Males:   ['Phocaeicola_A sp900765575', 'Merdibacter merdipullorum', 'Bifidobacterium bifidum', 'Roseburia intestinalis', 'Prevotella copri']
+Females: ['Lactobacillus acidophilus', 'Escherichia coli', 'Bifidobacterium bifidum', 'Ruminococcus_D bicirculans', 'Clostridium paraputrificum']
+Shared Prevalent: 1/5
+
+Most Abundant Species (Top 5):
+Males:   ['Phocaeicola_A sp900765575', 'Bifidobacterium bifidum', 'Bifidobacterium longum', 'Streptococcus thermophilus', 'Merdibacter merdipullorum']
+Females: ['Lactobacillus acidophilus', 'Ruminococcus_E bromii_B', 'Dialister invisus', 'Enterococcus faecalis', 'Eubacterium_R faecale']
+Shared Abundant: 0/5
+
+--- Strict Core Analysis (>90% Prevalence) ---
+Strict Core Species (>90% prevalence):
+Shared by both: 0
+Unique to Females: 0 []
+Unique to Males:   0 []
+
+--- 4. Alpha Diversity Analysis ---
+Female Mean Shannon: 1.29
+Male Mean Shannon:   1.23
+Diversity Test (Mann-Whitney): p=0.23786
+
+--- 5. Age vs Species Correlation ---
+                   Species       Rho  P_value
+          Prevotella copri  0.091877 0.066405
+         Dialister invisus  0.062559 0.211850
+     Eubacterium_R faecale -0.046411 0.354541
+   Ruminococcus_E bromii_B  0.042901 0.392143
+   Bifidobacterium bifidum  0.030545 0.542440
+    Bifidobacterium longum -0.029636 0.554521
+ Lactobacillus acidophilus -0.028302 0.572500
+     Enterococcus faecalis -0.018084 0.718417
+Streptococcus thermophilus  0.014626 0.770576
+    Roseburia intestinalis  0.002128 0.966156
+
+=== ADVANCED ANALYSIS REPORT ===
+
+--- A. Enterotyping (K-Means Clustering) ---
+Enterotype vs Sex Distribution:
+Enterotype    0   1
+Sex                
+F           264  30
+M            99   7
+
+--- B. Beta-Diversity (PCoA / Bray-Curtis) ---
+
+--- C. Rare Biosphere Analysis ---
+Rare Species Count (<1% max abundance): 0
+No species qualified as 'Rare' under this threshold.
+
+--- D. F/B Ratio Analysis ---
+Mean F/B Ratio by Sex:
+Sex
+F    165540.906049
+M    152090.026868
+F/B Ratio Mann-Whitney p-value: 0.11271

@@ -1,0 +1,22 @@
+
+========================================
+SUMMARY STATISTICS REPORT
+========================================
+• Total Samples: 400
+• Total Bacterial Species: 30
+
+• Top 5 Most Prevalent Species:
+  - Lactobacillus acidophilus: 19.00% of samples
+  - Bifidobacterium bifidum: 18.25% of samples
+  - Roseburia intestinalis: 17.50% of samples
+  - Escherichia coli: 17.25% of samples
+  - Ruminococcus_D bicirculans: 17.00% of samples
+
+• Top 5 Species by Mean Relative Abundance:
+  - Lactobacillus acidophilus: 0.0462 (mean fraction)
+  - Ruminococcus_E bromii_B: 0.0411 (mean fraction)
+  - Bifidobacterium bifidum: 0.0404 (mean fraction)
+  - Dialister invisus: 0.0397 (mean fraction)
+  - Eubacterium_R faecale: 0.0396 (mean fraction)
+========================================
+
