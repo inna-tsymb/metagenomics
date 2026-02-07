@@ -1,0 +1,15 @@
+TOP 5 MARKER SPECIES PER GROUP
+==============================
+(Based on difference in Mean Relative Abundance)
+
+                        Species         Group  Mean_Abund_Anthro  Mean_Abund_Env  Difference
+          s__GGB33037_SGB127733 Anthropogenic           5.630304        0.018601    5.611702
+ s__Aliarcobacter_cryaerophilus Anthropogenic           7.030460        2.721435    4.309025
+           s__Nitrospira_sp_ND1 Anthropogenic           3.628261        0.087487    3.540773
+     s__Acinetobacter_johnsonii Anthropogenic           3.673958        0.237529    3.436430
+           s__GGB61412_SGB83485 Anthropogenic           3.200694        0.000000    3.200694
+      s__Flavobacterium_tructae Environmental           0.000000       15.340797   15.340797
+s__Polynucleobacter_acidiphobus Environmental           0.000000        6.806531    6.806531
+      s__Limnohabitans_sp_Rim47 Environmental           0.000000        4.384599    4.384599
+       s__Aquirufa_nivalisilvae Environmental           0.000000        2.923158    2.923158
+ s__Sediminibacterium_salmoneum Environmental           0.002025        2.824022    2.821997

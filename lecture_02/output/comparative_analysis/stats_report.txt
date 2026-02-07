@@ -1,0 +1,9 @@
+COMPARATIVE ANALYSIS REPORT
+Hypothesis: Environmental diversity > Anthropogenic.
+Mann-Whitney p-value: 0.2809031753727914
+
+              Shannon                                                                  Richness                                                        
+                count      mean       std  min       25%       50%       75%       max    count        mean         std  min    25%   50%    75%    max
+Source_Type                                                                                                                                            
+Anthropogenic    74.0  2.438488  1.261370  0.0  1.561650  2.728482  3.524777  4.886984     74.0  148.391892  168.892997  1.0  23.75  54.5  238.0  607.0
+Environmental    39.0  2.175453  1.258625  0.0  1.147233  2.300548  3.324393  4.233651     39.0  113.923077  136.963381  1.0  23.50  42.0  173.0  423.0

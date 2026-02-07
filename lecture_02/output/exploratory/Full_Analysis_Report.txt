@@ -1,0 +1,35 @@
+OBJECTIVE 1: DATASET STRUCTURE & QUALITY
+========================================
+
+1. Total Samples: 250
+2. Independent Studies: 6
+   Studies: Chopyk_2020_pond, Chu_2017_sludge, GarciaMartin_2006_wastewater, Lekunberri_2018_river_wastewater, Rowe_2017_hospital_wastewater, Schulz_2017_wastewater
+
+3. Samples per Study Statistics:
+   - Minimum: 5
+   - Maximum: 141
+   - Mean:    41.67
+
+4. Available Metadata Fields (114 total):
+   study_code, ena_ers_sample_id, sample_alias, study_code_ext, sample_alias_ext, spire_sample_name, longitude, latitude, geographic_location, location_resolution ... [truncated]
+
+5. Missing Data Proportion (Top 10 non-empty fields):
+   - collection_date: 0.0% missing
+   - latitude: 0.0% missing
+   - longitude: 0.0% missing
+   - pH: 95.6% missing
+   - temperature: 100.0% missing
+   - depth_meters: 89.6% missing
+   - instrument_model: Not found in dataset
+
+9. Duplicate Samples (by ID): 0
+
+OBJECTIVE 2: HETEROGENEITY & LONGITUDINAL SAMPLING
+==================================================
+
+7. Longitudinal Sampling Analysis:
+   NO. No sites found with multiple sampling timepoints.
+
+8. Technical Heterogeneity:
+   Technical columns found: ['sampling_platform']
+   - sampling_platform is present but EMPTY.

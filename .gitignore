@@ -20,3 +20,5 @@ venv/
 # Editor files
 .vscode/
 .idea/
+
+lecture_02/input/
