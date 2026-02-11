@@ -6,8 +6,9 @@ This repository serves as a comprehensive collection of homework assignments and
 
 The project is organized by the logical flow of a metagenomic study:
 
-* **`homework1/`** – Analysis of Human Gut Microbiome Community Structure.
+* **`lecture_01/`** – Analysis of Human Gut Microbiome Community Structure.
 
+* **`lecture_02/`** – Analysis of Wastewater Microbiome Data from the Metalog Database.
 
 ## Bioinformatics Stack
 
