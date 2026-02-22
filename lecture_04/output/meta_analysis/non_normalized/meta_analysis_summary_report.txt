@@ -1,0 +1,204 @@
+================================================================================
+META-ANALYSIS SUMMARY REPORT
+================================================================================
+
+Analysis Date: 2026-02-22 13:20:03
+
+================================================================================
+1. COHORT SELECTION
+================================================================================
+
+Selected 4 wastewater-related cohorts:
+1. Schulz_2017_wastewater: 141 samples
+2. Chu_2017_sludge: 49 samples
+3. Rowe_2017_hospital_wastewater: 22 samples
+4. Lekunberri_2018_river_wastewater: 12 samples
+
+Total samples: 224
+Sample-size normalization: No sample-size normalization applied
+
+================================================================================
+2. DATA HARMONIZATION
+================================================================================
+
+Species filtering:
+  • Initial species (all cohorts): 12250
+  • After prevalence filter (≥10% per cohort): 646
+  • After abundance filter (≥0.0100%): 646
+  • Must appear in ≥3 cohorts
+
+Final dataset:
+  • Samples: 224
+  • Species: 646
+
+CLR transformation applied to combined dataset
+
+================================================================================
+3. BATCH EFFECT ASSESSMENT
+================================================================================
+
+PCA Results:
+  • PC1 variance explained: 20.7%
+  • PC2 variance explained: 13.8%
+  • PC1+PC2 combined: 34.5%
+
+Batch effect tests:
+  • PC1: ANOVA p=4.63e-11 (FDR=7.71e-11), Kruskal p=1.11e-05 (FDR=1.38e-05) [YES]
+  • PC2: ANOVA p=3.49e-15 (FDR=8.71e-15), Kruskal p=2.08e-20 (FDR=1.04e-19) [YES]
+  • PC3: ANOVA p=1.09e-15 (FDR=5.47e-15), Kruskal p=3.23e-16 (FDR=8.07e-16) [YES]
+  • PC4: ANOVA p=1.38e-06 (FDR=1.38e-06), Kruskal p=6.48e-11 (FDR=1.08e-10) [YES]
+  • PC5: ANOVA p=1.56e-08 (FDR=1.94e-08), Kruskal p=3.04e-05 (FDR=3.04e-05) [YES]
+
+================================================================================
+4. META-ANALYSIS RESULTS
+================================================================================
+
+Strategy: Fixed-effects meta-analysis
+  • Within-cohort effect sizes calculated
+  • Combined using inverse-variance weighting
+  • Heterogeneity assessed using I² statistic
+
+Results:
+  • Species tested: 646
+  • Significant species (FDR<0.05): 384 (59.4%)
+
+Heterogeneity:
+  • Median I²: 87.6%
+  • High heterogeneity (I²>75%): 464 species
+
+================================================================================
+5. TOP 20 SPECIES
+================================================================================
+
+646. t__SGB9957
+   Pooled effect: -1.30 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 95.2%
+   Present in 4 cohorts
+
+3. c__Alphaproteobacteria
+   Pooled effect: -1.83 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 98.6%
+   Present in 4 cohorts
+
+558. t__SGB1924
+   Pooled effect: -1.36 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 97.9%
+   Present in 4 cohorts
+
+572. t__SGB2534
+   Pooled effect: -1.11 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 95.7%
+   Present in 4 cohorts
+
+349. p__Spirochaetes
+   Pooled effect: -0.94 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 86.5%
+   Present in 4 cohorts
+
+91. f__FGB39929
+   Pooled effect: -1.06 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 93.8%
+   Present in 4 cohorts
+
+72. f__Comamonadaceae
+   Pooled effect: -1.73 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 99.2%
+   Present in 4 cohorts
+
+351. p__Verrucomicrobia
+   Pooled effect: -1.21 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 96.3%
+   Present in 4 cohorts
+
+293. o__Neisseriales
+   Pooled effect: -0.84 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 98.4%
+   Present in 4 cohorts
+
+305. o__OFGB39929
+   Pooled effect: -1.06 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 93.8%
+   Present in 4 cohorts
+
+106. f__Fluviibacteraceae
+   Pooled effect: -0.80 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 97.0%
+   Present in 4 cohorts
+
+274. o__Caulobacterales
+   Pooled effect: -0.96 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 90.2%
+   Present in 4 cohorts
+
+267. o__Bacteroidales
+   Pooled effect: -1.42 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 98.4%
+   Present in 4 cohorts
+
+270. o__Burkholderiales
+   Pooled effect: -1.83 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 99.3%
+   Present in 4 cohorts
+
+263. o__Aeromonadales
+   Pooled effect: -1.45 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 98.6%
+   Present in 4 cohorts
+
+474. s__Phocaeicola_dorei
+   Pooled effect: -0.67 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 87.5%
+   Present in 4 cohorts
+
+151. g__Aeromonas
+   Pooled effect: -1.34 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 98.4%
+   Present in 4 cohorts
+
+158. g__Bacteroides
+   Pooled effect: -1.52 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 98.1%
+   Present in 4 cohorts
+
+155. g__Arcobacter
+   Pooled effect: -1.01 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 94.5%
+   Present in 4 cohorts
+
+154. g__Alistipes
+   Pooled effect: -0.83 CLR units
+   P-value: 0.00e+00
+   I² heterogeneity: 90.9%
+   Present in 4 cohorts
+
+================================================================================
+6. VALIDATION (vs LECTURE_03)
+================================================================================
+
+Comparison with lecture_03 single-cohort analysis:
+  • Common species: 127
+  • Concordance (both significant): 45 (35.4%)
+  • Effect size correlation: r = -0.585
+
+================================================================================
+END OF REPORT
+================================================================================

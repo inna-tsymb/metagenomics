@@ -10,6 +10,10 @@ The project is organized by the logical flow of a metagenomic study:
 
 * **`lecture_02/`** – Analysis of Wastewater Microbiome Data from the Metalog Database.
 
+* **`lecture_03/`** - MWAS -Microbiome Wide Association Study.
+
+* **`lecture_04/`** - Meta-analysis and summary report.
+
 ## Bioinformatics Stack
 
 The following tools and languages were utilized:
@@ -27,3 +31,4 @@ To explore the analysis:
 3. Check the `outputs/` subdirectories for visual outputs (e.g., HTML reports or PNG plots).
 
 ### Environment Setup
+

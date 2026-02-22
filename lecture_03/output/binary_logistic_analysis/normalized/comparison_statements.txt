@@ -1,0 +1,555 @@
+
+1. Limnohabitans sp Rim47
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Limnohabitans is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 7.30e-60
+• Effect size (CLR units): 15.4251
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Limnohabitans_sp_Rim47 shows 
+  15.43 units of variation across groups (p=7.30e-60).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+2. Candidatus Planktophila sulfonica
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Candidatus is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 1.36e-54
+• Effect size (CLR units): 13.8162
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Candidatus_Planktophila_sulfonica shows 
+  13.82 units of variation across groups (p=1.36e-54).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+3. Limnohabitans sp 63ED37 2
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Limnohabitans is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 1.70e-54
+• Effect size (CLR units): 13.4564
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Limnohabitans_sp_63ED37_2 shows 
+  13.46 units of variation across groups (p=1.70e-54).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+4. Limnohabitans sp G3 2
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Limnohabitans is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 2.58e-53
+• Effect size (CLR units): 13.0248
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Limnohabitans_sp_G3_2 shows 
+  13.02 units of variation across groups (p=2.58e-53).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+5. Polynucleobacter sp es MAR 4
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Polynucleobacter is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 4.78e-53
+• Effect size (CLR units): 12.1603
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Polynucleobacter_sp_es_MAR_4 shows 
+  12.16 units of variation across groups (p=4.78e-53).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+6. GGB46525 SGB64386
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  GGB46525 is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 1.39e-52
+• Effect size (CLR units): 12.6118
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), GGB46525_SGB64386 shows 
+  12.61 units of variation across groups (p=1.39e-52).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+7. Limnohabitans sp 2KL 3
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Limnohabitans is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 2.82e-52
+• Effect size (CLR units): 12.6686
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Limnohabitans_sp_2KL_3 shows 
+  12.67 units of variation across groups (p=2.82e-52).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+8. Limnohabitans sp Rim11
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Limnohabitans is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 9.87e-52
+• Effect size (CLR units): 12.6664
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Limnohabitans_sp_Rim11 shows 
+  12.67 units of variation across groups (p=9.87e-52).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+9. Candidatus Methylopumilus universalis
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Candidatus is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 2.87e-51
+• Effect size (CLR units): 12.4684
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Candidatus_Methylopumilus_universalis shows 
+  12.47 units of variation across groups (p=2.87e-51).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+10. Polynucleobacter sp MWH CaK5
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Polynucleobacter is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 3.01e-51
+• Effect size (CLR units): 12.4759
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Polynucleobacter_sp_MWH_CaK5 shows 
+  12.48 units of variation across groups (p=3.01e-51).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+11. Polynucleobacter sp AP Ainpum 60 G11
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Polynucleobacter is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 4.35e-51
+• Effect size (CLR units): 12.5200
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Polynucleobacter_sp_AP_Ainpum_60_G11 shows 
+  12.52 units of variation across groups (p=4.35e-51).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+12. Polynucleobacter sp AM 26B4
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Polynucleobacter is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 8.89e-51
+• Effect size (CLR units): 12.3382
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Polynucleobacter_sp_AM_26B4 shows 
+  12.34 units of variation across groups (p=8.89e-51).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+13. Polynucleobacter cosmopolitanus
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Polynucleobacter is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 3.43e-50
+• Effect size (CLR units): 12.0779
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Polynucleobacter_cosmopolitanus shows 
+  12.08 units of variation across groups (p=3.43e-50).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+14. GGB24856 SGB81948
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  GGB24856 is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 4.35e-50
+• Effect size (CLR units): 12.2776
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), GGB24856_SGB81948 shows 
+  12.28 units of variation across groups (p=4.35e-50).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+
+
+15. Candidatus Fonsibacter ubiquis
+
+LOGISTIC REGRESSION (Binary Presence/Absence):
+─────────────────────────────────────────────
+• P-value: 3.12e-03
+• Enriched in: Lekunberri_2018_river_wastewater
+  - Prevalence: 100.0%
+• Depleted in: Rowe_2017_hospital_wastewater
+  - Prevalence: 10.0%
+• Effect size (prev. diff.): 0.9000
+• Significant (FDR): True
+
+➜ Logistic interpretation:
+  Candidatus is positively 
+  associated with Lekunberri_2018_river_wastewater presence pattern (p=3.12e-03),
+  appearing in 100.0% of samples from this source compared to 
+  10.0% in Rowe_2017_hospital_wastewater.
+
+LINEAR REGRESSION (CLR-transformed Abundance):
+───────────────────────────────────────────────
+• P-value: 9.59e-50
+• Effect size (CLR units): 12.0880
+• Significant (FDR): True
+
+➜ Linear interpretation:
+  In composed abundance space (CLR), Candidatus_Fonsibacter_ubiquis shows 
+  12.09 units of variation across groups (p=9.59e-50).
+
+COMPARISON:
+───────────
+✓ BOTH METHODS AGREE: Significant association detected
+
+Analysis:
+- Method agreement: Weak correlation between effect sizes
+- Implications: Species shows both compositional and presence patterns
+

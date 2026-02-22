@@ -1,0 +1,254 @@
+================================================================================
+PAIRWISE COMPARISON STATEMENTS
+================================================================================
+
+Analysis Date: 2026-02-22 13:06:20
+Species Analyzed: 859
+Pairwise Comparisons: 6 per species (5154 total)
+Sample-size normalization: Normalization skipped for Schulz_2017_wastewater (available: 20, threshold: 20)
+Primary test: Mann-Whitney U (Welch t-test retained as reference)
+FDR Threshold: 0.05
+Significant Comparisons: 3335/5154 (64.7%)
+
+================================================================================
+OVERALL SUMMARY
+================================================================================
+
+Chu_2017_sludge vs Lekunberri_2018_river_wastewater:
+  - 653/859 species significantly different (76.0%)
+  - Mean effect size: 3.68 CLR units
+  - Median effect size: 2.76 CLR units
+
+Chu_2017_sludge vs Rowe_2017_hospital_wastewater:
+  - 280/859 species significantly different (32.6%)
+  - Mean effect size: 2.86 CLR units
+  - Median effect size: 2.45 CLR units
+
+Chu_2017_sludge vs Schulz_2017_wastewater:
+  - 725/859 species significantly different (84.4%)
+  - Mean effect size: 1.08 CLR units
+  - Median effect size: 1.07 CLR units
+
+Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater:
+  - 465/859 species significantly different (54.1%)
+  - Mean effect size: 6.00 CLR units
+  - Median effect size: 5.15 CLR units
+
+Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater:
+  - 652/859 species significantly different (75.9%)
+  - Mean effect size: 3.72 CLR units
+  - Median effect size: 2.53 CLR units
+
+Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater:
+  - 560/859 species significantly different (65.2%)
+  - Mean effect size: 1.72 CLR units
+  - Median effect size: 1.93 CLR units
+
+================================================================================
+TOP 20 SPECIES WITH MOST PAIRWISE DIFFERENCES
+================================================================================
+
+
+696. s__Paraprevotella_clara
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: higher in Chu_2017_sludge (effect: +3.73 CLR, Cohen's d: +1.46, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.53 CLR, Cohen's d: -3.05, p=3.10e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: higher in Rowe_2017_hospital_wastewater (effect: +0.16 CLR, Cohen's d: +0.06, p=8.49e-03)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.04 CLR, Cohen's d: +0.29, p=2.26e-02)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.69 CLR, Cohen's d: -0.98, p=3.00e-02)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +1.20 CLR, Cohen's d: +0.48, p=3.36e-02)
+
+481. s__GGB46797_SGB64687
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -11.59 CLR, Cohen's d: -6.06, p=1.25e-06)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -1.06 CLR, Cohen's d: -0.76, p=2.28e-06)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +12.46 CLR, Cohen's d: +8.22, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +10.53 CLR, Cohen's d: +7.31, p=1.63e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.87 CLR, Cohen's d: +0.59, p=2.87e-02)
+
+188. s__Dechloromonas_denitrificans
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -6.26 CLR, Cohen's d: -3.85, p=8.82e-06)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -0.72 CLR, Cohen's d: -0.45, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +5.54 CLR, Cohen's d: +8.20, p=1.63e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.54 CLR, Cohen's d: -1.07, p=3.10e-05)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +7.07 CLR, Cohen's d: +4.82, p=5.29e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.82 CLR, Cohen's d: +0.40, p=2.87e-02)
+
+719. s__Polynucleobacter_difficilis
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -10.67 CLR, Cohen's d: -5.14, p=1.25e-06)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -0.93 CLR, Cohen's d: -0.63, p=5.80e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +11.67 CLR, Cohen's d: +7.12, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +9.74 CLR, Cohen's d: +6.20, p=1.63e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.00 CLR, Cohen's d: +0.64, p=2.50e-02)
+
+537. s__GGB69498_SGB93685
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -2.51 CLR, Cohen's d: -1.65, p=1.25e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +10.91 CLR, Cohen's d: +8.15, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +8.40 CLR, Cohen's d: +4.62, p=3.10e-05)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -7.77 CLR, Cohen's d: -2.09, p=5.64e-04)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +0.63 CLR, Cohen's d: +0.17, p=8.42e-04)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +3.14 CLR, Cohen's d: +0.88, p=1.18e-03)
+
+732. s__Polynucleobacter_yangtzensis
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +11.35 CLR, Cohen's d: +7.50, p=1.63e-05)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -10.45 CLR, Cohen's d: -2.80, p=3.10e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.33 CLR, Cohen's d: -0.66, p=3.10e-05)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +12.67 CLR, Cohen's d: +5.18, p=3.20e-05)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +0.90 CLR, Cohen's d: +0.26, p=1.46e-03)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +2.23 CLR, Cohen's d: +0.56, p=1.23e-02)
+
+441. s__GGB4566_SGB6305
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: higher in Chu_2017_sludge (effect: +3.30 CLR, Cohen's d: +1.37, p=3.10e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.53 CLR, Cohen's d: -3.05, p=3.10e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: higher in Rowe_2017_hospital_wastewater (effect: +0.08 CLR, Cohen's d: +0.03, p=7.87e-03)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +0.76 CLR, Cohen's d: +0.33, p=8.30e-03)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.61 CLR, Cohen's d: -0.95, p=3.96e-02)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.68 CLR, Cohen's d: +0.19, p=4.45e-02)
+
+649. s__Limnohabitans_sp_MMS_10A_160
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -1.02 CLR, Cohen's d: -0.65, p=2.17e-06)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -9.36 CLR, Cohen's d: -4.52, p=3.67e-06)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +10.27 CLR, Cohen's d: +6.65, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +8.34 CLR, Cohen's d: +5.67, p=1.63e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.91 CLR, Cohen's d: +0.55, p=4.32e-02)
+
+562. s__GGB75611_SGB103138
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -2.52 CLR, Cohen's d: -1.63, p=1.25e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +11.04 CLR, Cohen's d: +16.56, p=1.63e-05)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -0.60 CLR, Cohen's d: -0.19, p=1.64e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +8.52 CLR, Cohen's d: +5.98, p=4.35e-05)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -9.12 CLR, Cohen's d: -3.28, p=5.52e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.92 CLR, Cohen's d: +0.68, p=1.90e-02)
+
+71. s__Aquirufa_antheringensis
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -12.44 CLR, Cohen's d: -3.99, p=5.27e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +14.05 CLR, Cohen's d: +8.91, p=1.63e-05)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -0.32 CLR, Cohen's d: -0.11, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +12.12 CLR, Cohen's d: +8.06, p=1.63e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.61 CLR, Cohen's d: +0.57, p=3.70e-02)
+
+656. s__Malikia_spinosa
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +6.18 CLR, Cohen's d: +3.14, p=8.64e-05)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +0.33 CLR, Cohen's d: +0.13, p=6.06e-04)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +2.26 CLR, Cohen's d: +0.87, p=1.07e-03)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +4.25 CLR, Cohen's d: +2.22, p=3.20e-03)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -3.92 CLR, Cohen's d: -1.25, p=1.65e-02)
+
+42. s__Aeromonas_sobria
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +6.80 CLR, Cohen's d: +6.60, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +8.38 CLR, Cohen's d: +5.33, p=1.95e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.58 CLR, Cohen's d: -1.19, p=3.10e-05)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -6.52 CLR, Cohen's d: -2.52, p=6.46e-05)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +0.28 CLR, Cohen's d: +0.12, p=6.65e-04)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.86 CLR, Cohen's d: +0.68, p=2.82e-03)
+
+8. s__Acidovorax_sp_1608163
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +6.31 CLR, Cohen's d: +8.89, p=1.63e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -0.38 CLR, Cohen's d: -0.14, p=1.43e-03)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +6.69 CLR, Cohen's d: +2.48, p=1.53e-03)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -5.05 CLR, Cohen's d: -1.75, p=3.75e-03)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.64 CLR, Cohen's d: +0.42, p=8.02e-03)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +1.26 CLR, Cohen's d: +0.44, p=1.60e-02)
+
+623. s__Lacihabitans_sp_CS3_21
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -8.38 CLR, Cohen's d: -4.85, p=2.17e-06)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -1.06 CLR, Cohen's d: -0.75, p=2.28e-06)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +9.25 CLR, Cohen's d: +7.43, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +7.32 CLR, Cohen's d: +6.36, p=1.63e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.87 CLR, Cohen's d: +0.58, p=3.93e-02)
+
+90. s__Bacteroides_finegoldii
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: higher in Chu_2017_sludge (effect: +3.37 CLR, Cohen's d: +1.36, p=3.10e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.53 CLR, Cohen's d: -3.05, p=3.10e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -0.09 CLR, Cohen's d: -0.04, p=8.49e-03)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +0.83 CLR, Cohen's d: +0.35, p=8.57e-03)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.45 CLR, Cohen's d: -1.02, p=3.00e-02)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.92 CLR, Cohen's d: +0.28, p=3.70e-02)
+
+648. s__Limnohabitans_sp_Jir72
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -1.25 CLR, Cohen's d: -1.11, p=8.44e-07)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -5.60 CLR, Cohen's d: -2.36, p=3.75e-05)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +6.28 CLR, Cohen's d: +2.83, p=2.49e-04)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +4.35 CLR, Cohen's d: +2.00, p=2.76e-04)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.68 CLR, Cohen's d: +0.55, p=4.45e-02)
+
+81. s__Aurantimicrobium_photophilum
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -9.43 CLR, Cohen's d: -3.76, p=4.57e-06)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +8.93 CLR, Cohen's d: +6.13, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +10.86 CLR, Cohen's d: +7.09, p=1.63e-05)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -0.51 CLR, Cohen's d: -0.24, p=3.10e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.42 CLR, Cohen's d: +0.65, p=2.34e-02)
+
+654. s__Limnohabitans_sp_T6_20
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: lower in Chu_2017_sludge (effect: -1.03 CLR, Cohen's d: -0.69, p=2.17e-06)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -8.50 CLR, Cohen's d: -4.22, p=3.39e-06)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +9.40 CLR, Cohen's d: +6.01, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +7.47 CLR, Cohen's d: +5.01, p=1.63e-05)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +0.90 CLR, Cohen's d: +0.58, p=2.97e-02)
+
+93. s__Bacteroides_intestinalis
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: higher in Chu_2017_sludge (effect: +4.00 CLR, Cohen's d: +1.39, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.53 CLR, Cohen's d: -3.05, p=3.10e-05)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: higher in Rowe_2017_hospital_wastewater (effect: +0.45 CLR, Cohen's d: +0.14, p=7.87e-03)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +1.02 CLR, Cohen's d: +0.24, p=1.71e-02)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +1.47 CLR, Cohen's d: +0.52, p=3.27e-02)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: lower in Lekunberri_2018_river_wastewater (effect: -2.98 CLR, Cohen's d: -0.90, p=3.96e-02)
+
+250. s__Flavobacterium_sp_GENT5
+   ------------------------------------------------------------
+   Significant in 6/6 pairwise comparisons (100%)
+   • Rowe_2017_hospital_wastewater vs Schulz_2017_wastewater: lower in Rowe_2017_hospital_wastewater (effect: -1.93 CLR, Cohen's d: -2.54, p=4.57e-06)
+   • Chu_2017_sludge vs Lekunberri_2018_river_wastewater: lower in Chu_2017_sludge (effect: -11.38 CLR, Cohen's d: -3.26, p=1.21e-05)
+   • Lekunberri_2018_river_wastewater vs Schulz_2017_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +12.02 CLR, Cohen's d: +7.97, p=1.63e-05)
+   • Lekunberri_2018_river_wastewater vs Rowe_2017_hospital_wastewater: higher in Lekunberri_2018_river_wastewater (effect: +13.95 CLR, Cohen's d: +8.83, p=1.63e-05)
+   • Chu_2017_sludge vs Schulz_2017_wastewater: higher in Chu_2017_sludge (effect: +0.64 CLR, Cohen's d: +0.20, p=1.29e-03)
+   • Chu_2017_sludge vs Rowe_2017_hospital_wastewater: higher in Chu_2017_sludge (effect: +2.57 CLR, Cohen's d: +0.79, p=6.62e-03)
+
+================================================================================
+END OF REPORT
+================================================================================

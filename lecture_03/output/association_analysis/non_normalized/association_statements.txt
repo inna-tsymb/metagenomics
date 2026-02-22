@@ -1,0 +1,827 @@
+
+ASSOCIATION STATEMENTS: Species-Group Relationships
+================================================================================
+
+Analysis of top 30 species most strongly associated with wastewater source.
+
+Interpretation Guide:
+- POSITIVE association: Species is significantly enriched in a particular wastewater source
+- NEGATIVE association: Species is significantly depleted in a particular wastewater source
+- Beta (effect size): CLR-space units of abundance difference from global mean
+  • Beta > 0 indicates enrichment
+  • Beta < 0 indicates depletion
+  • Magnitude indicates strength of deviation
+
+FDR Significance Threshold: 0.05
+
+================================================================================
+
+1. Limnohabitans sp Rim47
+
+   Association with wastewater source (overall):
+   - p-value: 2.17e-102
+   - FDR-corrected p-value: 1.23e-99
+   - Effect size (max-min abundance): 15.2473 (CLR units)
+   - Model R²: 0.9004 (Study source explains 90.0% of variation)
+   - F-statistic: 618.08
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 12.9567
+     - Deviation from global mean: +13.1976 (≈ +-5480.0%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -2.0497 (≈ 851.1%)
+     - Present in 20 samples
+
+   Interpretation:
+   Limnohabitans shows strong association with wastewater source
+   (p=2.17e-102), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=13.1976 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+2. Candidatus Planktophila sulfonica
+
+   Association with wastewater source (overall):
+   - p-value: 3.45e-92
+   - FDR-corrected p-value: 9.79e-90
+   - Effect size (max-min abundance): 13.6383 (CLR units)
+   - Model R²: 0.8748 (Study source explains 87.5% of variation)
+   - F-statistic: 477.42
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 11.3478
+     - Deviation from global mean: +11.6810 (≈ +-3505.5%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.9573 (≈ 587.4%)
+     - Present in 20 samples
+
+   Interpretation:
+   Candidatus shows strong association with wastewater source
+   (p=3.45e-92), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=11.6810 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+3. Limnohabitans sp 63ED37 2
+
+   Association with wastewater source (overall):
+   - p-value: 2.63e-91
+   - FDR-corrected p-value: 4.97e-89
+   - Effect size (max-min abundance): 13.2785 (CLR units)
+   - Model R²: 0.8723 (Study source explains 87.2% of variation)
+   - F-statistic: 466.71
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.9880
+     - Deviation from global mean: +11.3418 (≈ +-3205.1%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.9367 (≈ 547.3%)
+     - Present in 20 samples
+
+   Interpretation:
+   Limnohabitans shows strong association with wastewater source
+   (p=2.63e-91), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=11.3418 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+4. Limnohabitans sp G3 2
+
+   Association with wastewater source (overall):
+   - p-value: 7.82e-89
+   - FDR-corrected p-value: 1.11e-86
+   - Effect size (max-min abundance): 12.8469 (CLR units)
+   - Model R²: 0.8650 (Study source explains 86.5% of variation)
+   - F-statistic: 437.77
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.5564
+     - Deviation from global mean: +10.9351 (≈ +-2887.9%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.9119 (≈ 504.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   Limnohabitans shows strong association with wastewater source
+   (p=7.82e-89), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.9351 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+5. GGB46525 SGB64386
+
+   Association with wastewater source (overall):
+   - p-value: 5.57e-87
+   - FDR-corrected p-value: 6.32e-85
+   - Effect size (max-min abundance): 12.4340 (CLR units)
+   - Model R²: 0.8592 (Study source explains 85.9% of variation)
+   - F-statistic: 417.13
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.1434
+     - Deviation from global mean: +10.5458 (≈ +-2621.0%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8882 (≈ 469.3%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB46525 shows strong association with wastewater source
+   (p=5.57e-87), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.5458 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+6. Limnohabitans sp 2KL 3
+
+   Association with wastewater source (overall):
+   - p-value: 1.03e-86
+   - FDR-corrected p-value: 9.74e-85
+   - Effect size (max-min abundance): 12.4907 (CLR units)
+   - Model R²: 0.8584 (Study source explains 85.8% of variation)
+   - F-statistic: 414.22
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.2002
+     - Deviation from global mean: +10.5993 (≈ +-2655.8%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8914 (≈ 473.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   Limnohabitans shows strong association with wastewater source
+   (p=1.03e-86), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.5993 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+7. Polynucleobacter sp es MAR 4
+
+   Association with wastewater source (overall):
+   - p-value: 1.52e-86
+   - FDR-corrected p-value: 1.23e-84
+   - Effect size (max-min abundance): 11.9824 (CLR units)
+   - Model R²: 0.8579 (Study source explains 85.8% of variation)
+   - F-statistic: 412.40
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.6919
+     - Deviation from global mean: +10.1202 (≈ +-2362.9%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8622 (≈ 434.8%)
+     - Present in 20 samples
+
+   Interpretation:
+   Polynucleobacter shows strong association with wastewater source
+   (p=1.52e-86), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.1202 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+8. Limnohabitans sp Rim11
+
+   Association with wastewater source (overall):
+   - p-value: 5.54e-86
+   - FDR-corrected p-value: 3.93e-84
+   - Effect size (max-min abundance): 12.4886 (CLR units)
+   - Model R²: 0.8560 (Study source explains 85.6% of variation)
+   - F-statistic: 406.36
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.1980
+     - Deviation from global mean: +10.5973 (≈ +-2654.4%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8913 (≈ 473.7%)
+     - Present in 20 samples
+
+   Interpretation:
+   Limnohabitans shows strong association with wastewater source
+   (p=5.54e-86), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.5973 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+9. Candidatus Methylopumilus universalis
+
+   Association with wastewater source (overall):
+   - p-value: 6.02e-85
+   - FDR-corrected p-value: 3.56e-83
+   - Effect size (max-min abundance): 12.2906 (CLR units)
+   - Model R²: 0.8527 (Study source explains 85.3% of variation)
+   - F-statistic: 395.43
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.0000
+     - Deviation from global mean: +10.4106 (≈ +-2535.5%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8799 (≈ 457.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   Candidatus shows strong association with wastewater source
+   (p=6.02e-85), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.4106 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+10. Polynucleobacter sp MWH CaK5
+
+   Association with wastewater source (overall):
+   - p-value: 6.27e-85
+   - FDR-corrected p-value: 3.56e-83
+   - Effect size (max-min abundance): 12.2981 (CLR units)
+   - Model R²: 0.8526 (Study source explains 85.3% of variation)
+   - F-statistic: 395.24
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.0075
+     - Deviation from global mean: +10.4177 (≈ +-2539.9%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8804 (≈ 458.4%)
+     - Present in 20 samples
+
+   Interpretation:
+   Polynucleobacter shows strong association with wastewater source
+   (p=6.27e-85), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.4177 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+11. Polynucleobacter sp AP Ainpum 60 G11
+
+   Association with wastewater source (overall):
+   - p-value: 8.10e-85
+   - FDR-corrected p-value: 4.18e-83
+   - Effect size (max-min abundance): 12.3422 (CLR units)
+   - Model R²: 0.8522 (Study source explains 85.2% of variation)
+   - F-statistic: 394.09
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 10.0516
+     - Deviation from global mean: +10.4593 (≈ +-2565.8%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8829 (≈ 461.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   Polynucleobacter shows strong association with wastewater source
+   (p=8.10e-85), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.4593 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+12. Polynucleobacter sp AM 26B4
+
+   Association with wastewater source (overall):
+   - p-value: 5.20e-84
+   - FDR-corrected p-value: 2.46e-82
+   - Effect size (max-min abundance): 12.1603 (CLR units)
+   - Model R²: 0.8495 (Study source explains 85.0% of variation)
+   - F-statistic: 385.77
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.8698
+     - Deviation from global mean: +10.2878 (≈ +-2460.8%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8725 (≈ 447.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   Polynucleobacter shows strong association with wastewater source
+   (p=5.20e-84), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.2878 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+13. GGB24856 SGB81948
+
+   Association with wastewater source (overall):
+   - p-value: 5.62e-83
+   - FDR-corrected p-value: 2.45e-81
+   - Effect size (max-min abundance): 12.0998 (CLR units)
+   - Model R²: 0.8460 (Study source explains 84.6% of variation)
+   - F-statistic: 375.33
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.8092
+     - Deviation from global mean: +10.2308 (≈ +-2426.9%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8690 (≈ 443.4%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB24856 shows strong association with wastewater source
+   (p=5.62e-83), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.2308 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+14. Polynucleobacter cosmopolitanus
+
+   Association with wastewater source (overall):
+   - p-value: 1.14e-82
+   - FDR-corrected p-value: 4.63e-81
+   - Effect size (max-min abundance): 11.9000 (CLR units)
+   - Model R²: 0.8449 (Study source explains 84.5% of variation)
+   - F-statistic: 372.27
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.6095
+     - Deviation from global mean: +10.0425 (≈ +-2319.2%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8575 (≈ 429.0%)
+     - Present in 20 samples
+
+   Interpretation:
+   Polynucleobacter shows strong association with wastewater source
+   (p=1.14e-82), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.0425 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+15. Candidatus Fonsibacter ubiquis
+
+   Association with wastewater source (overall):
+   - p-value: 4.07e-82
+   - FDR-corrected p-value: 1.54e-80
+   - Effect size (max-min abundance): 11.9101 (CLR units)
+   - Model R²: 0.8430 (Study source explains 84.3% of variation)
+   - F-statistic: 366.84
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.6196
+     - Deviation from global mean: +10.0520 (≈ +-2324.5%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8581 (≈ 429.7%)
+     - Present in 20 samples
+
+   Interpretation:
+   Candidatus shows strong association with wastewater source
+   (p=4.07e-82), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.0520 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+16. Candidatus Planktophila vernalis
+
+   Association with wastewater source (overall):
+   - p-value: 1.26e-81
+   - FDR-corrected p-value: 4.46e-80
+   - Effect size (max-min abundance): 11.9338 (CLR units)
+   - Model R²: 0.8412 (Study source explains 84.1% of variation)
+   - F-statistic: 362.07
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.6432
+     - Deviation from global mean: +10.0743 (≈ +-2337.0%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8595 (≈ 431.3%)
+     - Present in 20 samples
+
+   Interpretation:
+   Candidatus shows strong association with wastewater source
+   (p=1.26e-81), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.0743 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+17. GGB46527 SGB64388
+
+   Association with wastewater source (overall):
+   - p-value: 3.11e-81
+   - FDR-corrected p-value: 1.04e-79
+   - Effect size (max-min abundance): 11.7065 (CLR units)
+   - Model R²: 0.8398 (Study source explains 84.0% of variation)
+   - F-statistic: 358.29
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.4160
+     - Deviation from global mean: +9.8601 (≈ +-2220.1%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8464 (≈ 415.7%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB46527 shows strong association with wastewater source
+   (p=3.11e-81), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.8601 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+18. Limnohabitans sp 2KL 27
+
+   Association with wastewater source (overall):
+   - p-value: 1.69e-80
+   - FDR-corrected p-value: 5.31e-79
+   - Effect size (max-min abundance): 11.5992 (CLR units)
+   - Model R²: 0.8372 (Study source explains 83.7% of variation)
+   - F-statistic: 351.30
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.3086
+     - Deviation from global mean: +9.7589 (≈ +-2167.2%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8402 (≈ 408.7%)
+     - Present in 20 samples
+
+   Interpretation:
+   Limnohabitans shows strong association with wastewater source
+   (p=1.69e-80), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.7589 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+19. GGB34754 SGB82226
+
+   Association with wastewater source (overall):
+   - p-value: 6.97e-79
+   - FDR-corrected p-value: 2.08e-77
+   - Effect size (max-min abundance): 11.7046 (CLR units)
+   - Model R²: 0.8311 (Study source explains 83.1% of variation)
+   - F-statistic: 336.32
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.4141
+     - Deviation from global mean: +9.8583 (≈ +-2219.1%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8463 (≈ 415.6%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB34754 shows strong association with wastewater source
+   (p=6.97e-79), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.8583 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+20. Polynucleobacter sp MWH Jannik1A5
+
+   Association with wastewater source (overall):
+   - p-value: 2.10e-78
+   - FDR-corrected p-value: 5.95e-77
+   - Effect size (max-min abundance): 11.5303 (CLR units)
+   - Model R²: 0.8293 (Study source explains 82.9% of variation)
+   - F-statistic: 331.99
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.2397
+     - Deviation from global mean: +9.6940 (≈ +-2134.1%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8363 (≈ 404.2%)
+     - Present in 20 samples
+
+   Interpretation:
+   Polynucleobacter shows strong association with wastewater source
+   (p=2.10e-78), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.6940 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+21. Sphingorhabdus rigui
+
+   Association with wastewater source (overall):
+   - p-value: 2.81e-78
+   - FDR-corrected p-value: 7.58e-77
+   - Effect size (max-min abundance): 13.6420 (CLR units)
+   - Model R²: 0.8288 (Study source explains 82.9% of variation)
+   - F-statistic: 330.85
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 11.3515
+     - Deviation from global mean: +11.6349 (≈ +-4104.4%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -2.0071 (≈ 708.0%)
+     - Present in 20 samples
+
+   Interpretation:
+   Sphingorhabdus shows strong association with wastewater source
+   (p=2.81e-78), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=11.6349 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+22. GGB25723 SGB106723
+
+   Association with wastewater source (overall):
+   - p-value: 4.29e-77
+   - FDR-corrected p-value: 1.11e-75
+   - Effect size (max-min abundance): 11.3901 (CLR units)
+   - Model R²: 0.8242 (Study source explains 82.4% of variation)
+   - F-statistic: 320.36
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.0996
+     - Deviation from global mean: +9.5619 (≈ +-2068.3%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8282 (≈ 395.5%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB25723 shows strong association with wastewater source
+   (p=4.29e-77), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.5619 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+23. Polynucleobacter asymbioticus
+
+   Association with wastewater source (overall):
+   - p-value: 3.35e-75
+   - FDR-corrected p-value: 8.25e-74
+   - Effect size (max-min abundance): 10.8937 (CLR units)
+   - Model R²: 0.8166 (Study source explains 81.7% of variation)
+   - F-statistic: 304.17
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 8.6032
+     - Deviation from global mean: +9.0940 (≈ +-1852.9%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.7997 (≈ 366.7%)
+     - Present in 20 samples
+
+   Interpretation:
+   Polynucleobacter shows strong association with wastewater source
+   (p=3.35e-75), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.0940 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+24. Limnohabitans sp Hippo3
+
+   Association with wastewater source (overall):
+   - p-value: 7.65e-75
+   - FDR-corrected p-value: 1.81e-73
+   - Effect size (max-min abundance): 10.8977 (CLR units)
+   - Model R²: 0.8151 (Study source explains 81.5% of variation)
+   - F-statistic: 301.18
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 8.6072
+     - Deviation from global mean: +9.0978 (≈ +-1854.5%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8000 (≈ 366.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   Limnohabitans shows strong association with wastewater source
+   (p=7.65e-75), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.0978 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+25. GGB34383 SGB60872
+
+   Association with wastewater source (overall):
+   - p-value: 7.99e-74
+   - FDR-corrected p-value: 1.81e-72
+   - Effect size (max-min abundance): 11.1280 (CLR units)
+   - Model R²: 0.8108 (Study source explains 81.1% of variation)
+   - F-statistic: 292.81
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 8.8374
+     - Deviation from global mean: +9.3148 (≈ +-1951.3%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.8132 (≈ 379.8%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB34383 shows strong association with wastewater source
+   (p=7.99e-74), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.3148 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+26. Candidatus Planktophila limnetica
+
+   Association with wastewater source (overall):
+   - p-value: 2.34e-73
+   - FDR-corrected p-value: 5.10e-72
+   - Effect size (max-min abundance): 10.8615 (CLR units)
+   - Model R²: 0.8088 (Study source explains 80.9% of variation)
+   - F-statistic: 289.04
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 8.5710
+     - Deviation from global mean: +9.0636 (≈ +-1839.8%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.7979 (≈ 364.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   Candidatus shows strong association with wastewater source
+   (p=2.34e-73), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.0636 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+27. GGB46797 SGB64687
+
+   Association with wastewater source (overall):
+   - p-value: 5.55e-73
+   - FDR-corrected p-value: 1.17e-71
+   - Effect size (max-min abundance): 12.2855 (CLR units)
+   - Model R²: 0.8072 (Study source explains 80.7% of variation)
+   - F-statistic: 286.03
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 9.9949
+     - Deviation from global mean: +10.3263 (≈ +-3116.5%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.9592 (≈ 591.3%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB46797 shows strong association with wastewater source
+   (p=5.55e-73), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=10.3263 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+28. GGB32489 SGB48813
+
+   Association with wastewater source (overall):
+   - p-value: 8.62e-73
+   - FDR-corrected p-value: 1.75e-71
+   - Effect size (max-min abundance): 10.8244 (CLR units)
+   - Model R²: 0.8063 (Study source explains 80.6% of variation)
+   - F-statistic: 284.51
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 8.5339
+     - Deviation from global mean: +9.0286 (≈ +-1824.8%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.7958 (≈ 362.9%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB32489 shows strong association with wastewater source
+   (p=8.62e-73), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=9.0286 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+29. GGB25723 SGB84803
+
+   Association with wastewater source (overall):
+   - p-value: 1.14e-72
+   - FDR-corrected p-value: 2.23e-71
+   - Effect size (max-min abundance): 10.7828 (CLR units)
+   - Model R²: 0.8058 (Study source explains 80.6% of variation)
+   - F-statistic: 283.56
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 8.4923
+     - Deviation from global mean: +8.9895 (≈ +-1808.1%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.7934 (≈ 360.7%)
+     - Present in 20 samples
+
+   Interpretation:
+   GGB25723 shows strong association with wastewater source
+   (p=1.14e-72), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=8.9895 CLR units), indicating a biologically meaningful
+   shift in community composition.
+
+30. Candidatus Nanopelagicus SGB64093
+
+   Association with wastewater source (overall):
+   - p-value: 1.73e-72
+   - FDR-corrected p-value: 3.26e-71
+   - Effect size (max-min abundance): 10.7615 (CLR units)
+   - Model R²: 0.8050 (Study source explains 80.5% of variation)
+   - F-statistic: 282.13
+
+   Group-specific associations:
+   ✓ POSITIVELY associated with Lekunberri_2018_river_wastewater:
+     - Mean CLR abundance: 8.4709
+     - Deviation from global mean: +8.9693 (≈ +-1799.7%)
+     - Present in 12 samples
+     
+   ✗ NEGATIVELY associated with Rowe_2017_hospital_wastewater:
+     - Mean CLR abundance: -2.2905
+     - Deviation from global mean: -1.7921 (≈ 359.6%)
+     - Present in 20 samples
+
+   Interpretation:
+   Candidatus shows strong association with wastewater source
+   (p=1.73e-72), with notably higher relative abundance in Lekunberri_2018_river_wastewater
+   compared to other sources. The estimated effect size is substantial 
+   (beta=8.9693 CLR units), indicating a biologically meaningful
+   shift in community composition.

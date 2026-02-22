@@ -1,0 +1,154 @@
+================================================================================
+MICROBIOME DATA FILTERING & CLR TRANSFORMATION - ANALYSIS REPORT
+================================================================================
+Generated: 2026-02-22 13:04:57
+
+1. FILTERING PARAMETERS
+--------------------------------------------------------------------------------
+Prevalence threshold: 10.0% (species in ≥ x% of samples)
+Abundance threshold: 0.01% (mean relative abundance ≥ x%)
+Pseudocount: 1e-06
+
+Sample-size normalization
+----------------------------------------
+Applied: True
+Rule: Schulz_2017_wastewater -> 20 max samples
+Status: Downsampled Schulz_2017_wastewater: 128 -> 20
+Cohort sizes (before -> after):
+  - Chu_2017_sludge: 49 -> 49
+  - Lekunberri_2018_river_wastewater: 12 -> 12
+  - Rowe_2017_hospital_wastewater: 20 -> 20
+  - Schulz_2017_wastewater: 128 -> 20
+
+2. FILTERING RESULTS
+--------------------------------------------------------------------------------
+Initial samples: 209
+Initial species: 3794
+Filtered samples: 101 (Δ: 108 removed)
+Filtered species: 859 (Δ: 2935 removed)
+Species retention rate: 22.6%
+
+3. SPARSITY ANALYSIS
+--------------------------------------------------------------------------------
+Before filtering:
+  - Sparsity: 96.91%
+  - Min detected species per sample: 1
+  - Max detected species per sample: 772
+  - Mean detected species per sample: 117.4
+
+After filtering:
+  - Sparsity: 85.30%
+  - Min detected species per sample: 1
+  - Max detected species per sample: 359
+  - Mean detected species per sample: 126.3
+
+4. CLR TRANSFORMATION VALIDATION
+--------------------------------------------------------------------------------
+CLR mean: 0.00000000 (should be ≈ 0)
+CLR std: 3.8060
+CLR min: -4.1440
+CLR max: 18.3992
+CLR median: -0.6977
+
+5. METADATA ALIGNMENT
+--------------------------------------------------------------------------------
+Aligned samples: 101
+Aligned species: 859
+Metadata fields: 110
+
+6. TOP 15 RETAINED SPECIES (by mean abundance)
+--------------------------------------------------------------------------------
+ 1. s__Aliarcobacter_cryaerophilus
+    Mean abundance: 6.8755%
+    Prevalence: 60.4%
+    Detected in 61.0 samples
+
+ 2. s__GGB33037_SGB127733
+    Mean abundance: 4.1252%
+    Prevalence: 19.8%
+    Detected in 20.0 samples
+
+ 3. s__Acinetobacter_johnsonii
+    Mean abundance: 2.9195%
+    Prevalence: 55.4%
+    Detected in 56.0 samples
+
+ 4. s__Nitrospira_sp_ND1
+    Mean abundance: 2.6871%
+    Prevalence: 26.7%
+    Detected in 27.0 samples
+
+ 5. s__GGB61412_SGB83485
+    Mean abundance: 2.3452%
+    Prevalence: 12.9%
+    Detected in 13.0 samples
+
+ 6. s__GGB47467_SGB65430
+    Mean abundance: 2.2273%
+    Prevalence: 14.9%
+    Detected in 15.0 samples
+
+ 7. s__GGB40645_SGB64801
+    Mean abundance: 2.0231%
+    Prevalence: 28.7%
+    Detected in 29.0 samples
+
+ 8. s__GGB26682_SGB64469
+    Mean abundance: 1.8655%
+    Prevalence: 15.8%
+    Detected in 16.0 samples
+
+ 9. s__GGB67319_SGB91067
+    Mean abundance: 1.7832%
+    Prevalence: 18.8%
+    Detected in 19.0 samples
+
+10. s__Limnohabitans_sp_Rim47
+    Mean abundance: 1.6931%
+    Prevalence: 11.9%
+    Detected in 12.0 samples
+
+11. s__Flavobacterium_sp_GENT11
+    Mean abundance: 1.5190%
+    Prevalence: 18.8%
+    Detected in 19.0 samples
+
+12. s__GGB16996_SGB25597
+    Mean abundance: 1.4358%
+    Prevalence: 6.9%
+    Detected in 7.0 samples
+
+13. s__GGB67335_SGB103624
+    Mean abundance: 1.3140%
+    Prevalence: 8.9%
+    Detected in 9.0 samples
+
+14. s__Aeromonas_media
+    Mean abundance: 1.2114%
+    Prevalence: 49.5%
+    Detected in 50.0 samples
+
+15. s__GGB46599_SGB103509
+    Mean abundance: 1.1654%
+    Prevalence: 5.9%
+    Detected in 6.0 samples
+
+7. OUTPUT FILES GENERATED
+--------------------------------------------------------------------------------
+Data tables:
+  - abundance_filtered_raw.csv: Filtered abundance table (raw %)
+  - abundance_clr_transformed.csv: CLR-transformed abundances
+  - abundance_clr_aligned.csv: CLR abundances aligned with metadata
+  - metadata_aligned.csv: Aligned metadata
+
+Visualizations:
+  1. 01_species_retention_pie.png - Species retention & removal reasons
+  2. 02_prevalence_abundance_filtering.png - Scatter plot of filtering criteria
+  3. 03_clr_boxplots_top12.png - Boxplots of top 12 species distributions
+  4. 04_clr_distribution_analysis.png - CLR value distributions and normality
+  5. 05_clr_heatmap_top20.png - Heatmap of top 20 species
+  6. 06_summary_statistics_comparison.png - Before/after filtering comparison
+
+================================================================================
+Analysis complete!
+================================================================================

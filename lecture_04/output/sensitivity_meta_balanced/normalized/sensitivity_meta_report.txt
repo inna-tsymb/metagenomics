@@ -1,0 +1,147 @@
+SENSITIVITY ANALYSIS REPORT: META-ANALYSIS WITH BALANCED COHORTS
+======================================================================
+
+OBJECTIVE
+---------
+Test robustness of meta-analysis results to sample size imbalance by
+using balanced cohorts (n=12 each) from lecture_03 sensitivity analysis.
+
+SAMPLE SIZE COMPARISON
+---------------------
+Original meta-analysis (lecture_04):
+  • Total samples: 209 (from lecture_03 unbalanced)
+  • Schulz: 128 samples (61%)
+  • Chu: 49 samples (23%)
+  • Rowe: 20 samples (10%)
+  • Lekunberri: 12 samples (6%)
+  • Imbalance ratio: 10.7x
+
+Balanced meta-analysis:
+  • Total samples: 48
+  • All cohorts: 12 samples each (25%)
+  • Imbalance ratio: 1.0x (perfectly balanced)
+
+BATCH EFFECTS (BALANCED COHORTS)
+--------------------------------
+PCA variance explained:
+  • PC1: 24.2%
+  • PC2: 16.4%
+  • PC1+PC2: 40.6%
+
+ANOVA tests (cohort effect on PCs):
+  • PC1: F=62.79, p=6.13e-16 [YES]
+  • PC2: F=0.80, p=5.00e-01 [NO]
+  • PC3: F=2.85, p=4.82e-02 [YES]
+  • PC4: F=13.20, p=2.80e-06 [YES]
+  • PC5: F=2.05, p=1.20e-01 [NO]
+
+
+META-ANALYSIS RESULTS
+---------------------
+Original (n=209):
+  • Species tested: 647
+  • Significant (FDR<0.05): 475/647 (73.4%)
+  • Median I² heterogeneity: 85.1%
+
+Balanced (n=48):
+  • Species tested: 859
+  • Significant (FDR<0.05): 562/859 (65.4%)
+  • Median I² heterogeneity: 93.1%
+
+CONCORDANCE ANALYSIS
+--------------------
+Significance concordance:
+  • Both significant: 59/148 (39.9%)
+  • Original only: 55 (37.2%)
+  • Balanced only: 16 (10.8%)
+  • Neither: 18 (12.2%)
+
+Correlation metrics:
+  • Pooled effect correlation: r = 0.148
+  • P-value correlation: r = 0.069
+  • I² heterogeneity correlation: r = 0.182
+
+TOP 10 SPECIES - ORIGINAL META-ANALYSIS RANKING
+-----------------------------------------------
+
+1. g__GGB44404
+   Original: effect=1.06, p=0.00e+00, I²=77.6%
+   Balanced: effect=nan, p=nan, I²=nan%, rank=N/A, sig=N/A
+
+2. g__GGB44854
+   Original: effect=0.95, p=0.00e+00, I²=78.4%
+   Balanced: effect=nan, p=nan, I²=nan%, rank=N/A, sig=N/A
+
+3. c__Alphaproteobacteria
+   Original: effect=-6.82, p=0.00e+00, I²=99.0%
+   Balanced: effect=nan, p=nan, I²=nan%, rank=N/A, sig=N/A
+
+4. s__Segatella_copri
+   Original: effect=-1.99, p=0.00e+00, I²=91.0%
+   Balanced: effect=-1.27, p=1.59e-02, I²=56.4%, rank=794, sig=YES
+
+5. c__Bacteroidia
+   Original: effect=-3.10, p=0.00e+00, I²=98.2%
+   Balanced: effect=nan, p=nan, I²=nan%, rank=N/A, sig=N/A
+
+6. s__Simplicispira_sp_110
+   Original: effect=1.00, p=0.00e+00, I²=87.5%
+   Balanced: effect=-0.29, p=4.73e-01, I²=39.0%, rank=806, sig=NO
+
+7. f__Fluviibacteraceae
+   Original: effect=-1.83, p=0.00e+00, I²=97.1%
+   Balanced: effect=nan, p=nan, I²=nan%, rank=N/A, sig=N/A
+
+8. g__Zoogloea
+   Original: effect=-1.10, p=0.00e+00, I²=90.0%
+   Balanced: effect=nan, p=nan, I²=nan%, rank=N/A, sig=N/A
+
+9. s__Eubacterium_rectale
+   Original: effect=-2.48, p=0.00e+00, I²=93.6%
+   Balanced: effect=-1.27, p=2.09e-02, I²=73.8%, rank=226, sig=YES
+
+10. o__Acidaminococcales
+   Original: effect=-1.43, p=0.00e+00, I²=89.4%
+   Balanced: effect=nan, p=nan, I²=nan%, rank=N/A, sig=N/A
+
+
+KEY FINDINGS
+------------
+1. Significance rate: 73.4% → 65.4% with balanced samples
+   • Decreased due to reduced statistical power
+
+2. Concordance: 39.9% of species significant in BOTH analyses
+   • Low concordance indicates sample size dependent findings
+
+3. Pooled effect correlation: r = 0.148
+   • Weak correlation
+   • Effect sizes vary between analyses
+
+4. I² heterogeneity correlation: r = 0.182
+   • Heterogeneity patterns change with balanced samples
+
+INTERPRETATION
+--------------
+⚠ Meta-analysis results are SENSITIVE to sample size imbalance.
+⚠ Balanced results may better reflect true cross-cohort patterns.
+⚠ Original results may overweight Schulz cohort contributions.
+
+
+RECOMMENDATION
+--------------
+⚠ Consider balanced results for more generalizable conclusions.
+⚠ Original results may reflect Schulz-specific patterns.
+
+
+FILES GENERATED
+---------------
+• meta_analysis_balanced_all.csv - All species (balanced, n=48)
+• meta_analysis_balanced_significant.csv - Significant species only
+• comparison_original_vs_balanced_meta.csv - Side-by-side comparison
+• batch_effect_tests_balanced.csv - Batch effect ANOVA results
+• pca_coordinates_balanced.csv - PCA coordinates
+• 01_meta_sensitivity_comparison.png - 4-panel comparison
+• 02_batch_and_significance.png - PCA + significance rates
+• sensitivity_meta_report.txt - This report
+
+Analysis completed: 2026-02-22 13:22:17

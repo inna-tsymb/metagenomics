@@ -1,0 +1,130 @@
+
+BINARY PRESENCE/ABSENCE ANALYSIS: LOGISTIC REGRESSION
+======================================================================
+
+OBJECTIVE:
+Identify which microbial species are significantly associated with wastewater
+source using binary presence/absence (logistic) models, accounting for sparse
+taxa with high zero-inflation.
+
+DATA:
+- Total samples analyzed: 209
+- Species tested: 567
+- Binary conversion threshold: CLR > -1 (any detectable presence)
+- Groups (study_code): Chu_2017_sludge, Lekunberri_2018_river_wastewater, Rowe_2017_hospital_wastewater, Schulz_2017_wastewater
+- Sample-size normalization: No sample-size normalization applied
+
+BINARY DATA CHARACTERISTICS:
+- Mean species prevalence: 72.2%
+- Median species prevalence: 70.8%
+- Range: 63.6% - 95.7%
+- Sparse species (< 10% prevalence): 0 species
+
+STATISTICAL METHOD:
+- Model: Logistic regression (binomial GLM)
+- Formula: presence ~ study_code
+- Multiple testing correction: FDR (Benjamini-Hochberg)
+- Significance threshold: FDR < 0.05
+
+RESULTS (LOGISTIC REGRESSION):
+- Total species with logistic models: 567
+- Significant associations (FDR < 0.05): 560
+- Effect size range (prevalence difference): [0.0612, 1.0000]
+- Mean effect size: 0.8312
+
+COMPARISON WITH LINEAR REGRESSION:
+- Correlation (p-values): r = 0.0488
+- Correlation (effect sizes): r = 0.2353
+- Both methods significant: 551 species
+- Logistic only: 9 species
+- Linear only: 6 species
+
+TOP 10 ASSOCIATED SPECIES (LOGISTIC):
+
+
+564. s__Vibrio_parahaemolyticus
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.8984
+   Enriched in: Schulz_2017_wastewater (89.8% prevalence)
+   Depleted in: Lekunberri_2018_river_wastewater (0.0% prevalence)
+
+2. s__Achromobacter_sp_JUb104
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.8984
+   Enriched in: Schulz_2017_wastewater (89.8% prevalence)
+   Depleted in: Lekunberri_2018_river_wastewater (0.0% prevalence)
+
+561. s__Turicibacter_bilis
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.8984
+   Enriched in: Schulz_2017_wastewater (89.8% prevalence)
+   Depleted in: Lekunberri_2018_river_wastewater (0.0% prevalence)
+
+548. s__Sulfurisoma_sediminicola
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.8484
+   Enriched in: Schulz_2017_wastewater (89.8% prevalence)
+   Depleted in: Rowe_2017_hospital_wastewater (5.0% prevalence)
+
+556. s__Thioploca_ingrica
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.8984
+   Enriched in: Schulz_2017_wastewater (89.8% prevalence)
+   Depleted in: Lekunberri_2018_river_wastewater (0.0% prevalence)
+
+546. s__Sulfitobacter_litoralis
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.8984
+   Enriched in: Schulz_2017_wastewater (89.8% prevalence)
+   Depleted in: Lekunberri_2018_river_wastewater (0.0% prevalence)
+
+430. s__Limnohabitans_sp_2KL_27
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.9500
+   Enriched in: Lekunberri_2018_river_wastewater (100.0% prevalence)
+   Depleted in: Rowe_2017_hospital_wastewater (5.0% prevalence)
+
+431. s__Limnohabitans_sp_2KL_3
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.9500
+   Enriched in: Lekunberri_2018_river_wastewater (100.0% prevalence)
+   Depleted in: Rowe_2017_hospital_wastewater (5.0% prevalence)
+
+432. s__Limnohabitans_sp_63ED37_2
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.9500
+   Enriched in: Lekunberri_2018_river_wastewater (100.0% prevalence)
+   Depleted in: Rowe_2017_hospital_wastewater (5.0% prevalence)
+
+433. s__Limnohabitans_sp_G3_2
+   p-value: 1.95e-11
+   FDR-adjusted p: 6.90e-11
+   Prevalence effect size: 0.9500
+   Enriched in: Lekunberri_2018_river_wastewater (100.0% prevalence)
+   Depleted in: Rowe_2017_hospital_wastewater (5.0% prevalence)
+
+
+OUTPUT FILES:
+✓ logistic_regression_results_all.csv - All 567 species with statistics
+✓ logistic_regression_results_significant.csv - FDR-significant species (560)
+✓ comparison_linear_vs_logistic.csv - Side-by-side comparison of methods
+✓ 01_volcano_plot_binary.png - Volcano plot for binary analysis
+✓ 02_method_comparison.png - Scatter plots comparing methods
+✓ 03_concordance_analysis.png - Significance concordance and ranking comparison
+✓ 04_prevalence_by_group.png - Prevalence of top species by group
+
+INTERPRETATION:
+Binary models identify species that show consistent presence/absence patterns
+across groups, potentially capturing ecological niches better than abundance
+alone. Sparse species may show stronger associations in binary models.
+
+======================================================================

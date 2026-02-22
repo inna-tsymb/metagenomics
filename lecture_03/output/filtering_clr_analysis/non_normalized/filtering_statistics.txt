@@ -1,0 +1,52 @@
+================================================================================
+SPECIES FILTERING STATISTICS
+================================================================================
+
+Total species analyzed: 3794
+Species retained: 567
+Species removed: 3227
+Retention rate: 14.9%
+
+RETAINED SPECIES (Top 20 by mean abundance):
+--------------------------------------------------------------------------------
+                                prevalence  mean_abundance  median_abundance  max_abundance  n_samples_detected
+species                                                                                                        
+s__Nitrospira_sp_ND1              0.358852        7.673392               0.0      100.00000                  75
+s__Acinetobacter_johnsonii        0.449761        6.837059               0.0      100.00000                  94
+s__GGB67335_SGB103624             0.306220        6.520040               0.0      100.00000                  64
+s__GGB24407_SGB36248              0.334928        6.117611               0.0       99.89367                  70
+s__GGB67319_SGB91067              0.382775        5.844821               0.0       97.79694                  80
+s__GGB26682_SGB64469              0.387560        5.383158               0.0      100.00000                  81
+s__GGB46263_SGB80728              0.263158        3.922769               0.0      100.00000                  55
+s__Aliarcobacter_cryaerophilus    0.330144        3.325021               0.0       53.67568                  69
+s__GGB33037_SGB127733             0.095694        1.993505               0.0       42.25791                  20
+s__GGB75160_SGB103632             0.282297        1.923446               0.0       88.18093                  59
+s__GGB47467_SGB65430              0.239234        1.923380               0.0       92.21317                  50
+s__GGB61412_SGB83485              0.062201        1.133306               0.0       55.15224                  13
+s__Acinetobacter_bohemicus        0.239234        1.081838               0.0       53.04179                  50
+s__Nitrosomonas_oligotropha       0.143541        1.038479               0.0      100.00000                  30
+s__GGB46599_SGB64468              0.205742        1.020658               0.0       71.38495                  43
+s__GGB40645_SGB64801              0.157895        0.977935               0.0       32.60654                  33
+s__GGB45985_SGB63721              0.263158        0.864348               0.0      100.00000                  55
+s__Limnohabitans_sp_Rim47         0.057416        0.818179               0.0       26.97736                  12
+s__GGB46599_SGB103509             0.177033        0.773400               0.0       99.71643                  37
+s__Flavobacterium_sp_GENT11       0.090909        0.734045               0.0       47.86420                  19
+
+REMOVED SPECIES (Reasons):
+--------------------------------------------------------------------------------
+Low prevalence species: 3227
+Low abundance species: 3227
+
+Top 10 removed species (by max abundance):
+                                        prevalence  mean_abundance  median_abundance  max_abundance  n_samples_detected
+species                                                                                                                
+s__Lacticaseibacillus_rhamnosus           0.014354        0.009999               0.0        2.07215                   3
+s__Dysgonomonas_sp_GY617                  0.033493        0.009781               0.0        1.90183                   7
+s__Chryseobacterium_indologenes           0.009569        0.009095               0.0        1.90065                   2
+s__Pseudomonas_sp_5Ae_yellow              0.004785        0.008934               0.0        1.86722                   1
+s__Micrococcus_luteus                     0.009569        0.008877               0.0        1.82611                   2
+s__GGB27273_SGB39505                      0.004785        0.007983               0.0        1.66836                   1
+s__Brevibacterium_casei                   0.009569        0.007943               0.0        1.66000                   2
+s__Faecalitalea_cylindroides              0.038278        0.008366               0.0        1.58376                   8
+s__Candidatus_Rhabdochlamydia_sp_T3358    0.043062        0.008933               0.0        1.58332                   9
+s__Smithella_sp_D17                       0.004785        0.007460               0.0        1.55917                   1
