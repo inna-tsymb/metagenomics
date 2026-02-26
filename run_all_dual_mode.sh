@@ -23,6 +23,21 @@ run_step() {
   )
 }
 
+cleanup_report_history() {
+  local roots=(
+    "$ROOT_DIR/lecture_03/output"
+    "$ROOT_DIR/lecture_04/output"
+  )
+
+  echo
+  echo "Cleaning report_history folders..."
+  for root in "${roots[@]}"; do
+    [[ -d "$root" ]] || continue
+    find "$root" -type d -name 'report_history' -prune -exec rm -rf {} +
+  done
+  echo "✓ report_history cleanup complete"
+}
+
 run_lecture03_mode() {
   local mode="$1"
   local normalize="$2"
@@ -87,12 +102,14 @@ run_lecture04_mode() {
 
   run_step "$l4" scripts/meta_analysis.py \
     APPLY_SAMPLE_SIZE_NORMALIZATION="$normalize" \
+    LECTURE03_ASSOCIATION="../lecture_03/output/association_analysis/$mode/association_results_all.csv" \
     OUTPUT_DIR="output/meta_analysis/$mode"
 
   run_step "$l4" scripts/sensitivity_meta_balanced.py \
     OUTPUT_DIR="output/sensitivity_meta_balanced/$mode" \
     CLR_FILE="../lecture_03/output/sensitivity_balanced/$mode/abundance_clr_balanced.csv" \
     METADATA_FILE="../lecture_03/output/sensitivity_balanced/$mode/metadata_balanced.csv" \
+    ORIGINAL_METADATA_FILE="../lecture_03/output/filtering_clr_analysis/$mode/metadata_aligned.csv" \
     ORIGINAL_META_RESULTS="output/meta_analysis/$mode/meta_analysis_results_all.csv"
 }
 
@@ -104,6 +121,8 @@ run_lecture03_mode non_normalized false
 
 run_lecture04_mode normalized true
 run_lecture04_mode non_normalized false
+
+cleanup_report_history
 
 echo
 echo "✅ Dual-mode pipeline completed for lecture_03 and lecture_04"

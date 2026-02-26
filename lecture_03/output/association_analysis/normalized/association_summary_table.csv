@@ -1,31 +1,31 @@
 Species,Enriched in,p-value,Effect Size,β (enriched),R²
-Limnohabitans sp Rim47,Lekunberri_2018_river_wastewater,7.30e-60,15.425,12.951,0.942
-Candidatus Planktophila sulfonica,Lekunberri_2018_river_wastewater,1.36e-54,13.816,11.533,0.926
-Limnohabitans sp 63ED37 2,Lekunberri_2018_river_wastewater,1.70e-54,13.456,11.216,0.925
-Limnohabitans sp G3 2,Lekunberri_2018_river_wastewater,2.58e-53,13.025,10.836,0.921
-Polynucleobacter sp es MAR 4,Lekunberri_2018_river_wastewater,4.78e-53,12.160,10.074,0.920
-GGB46525 SGB64386,Lekunberri_2018_river_wastewater,1.39e-52,12.612,10.472,0.918
-Limnohabitans sp 2KL 3,Lekunberri_2018_river_wastewater,2.82e-52,12.669,10.522,0.917
-Limnohabitans sp Rim11,Lekunberri_2018_river_wastewater,9.87e-52,12.666,10.520,0.915
-Candidatus Methylopumilus universalis,Lekunberri_2018_river_wastewater,2.87e-51,12.468,10.346,0.913
-Polynucleobacter sp MWH CaK5,Lekunberri_2018_river_wastewater,3.01e-51,12.476,10.352,0.913
-Polynucleobacter sp AP Ainpum 60 G11,Lekunberri_2018_river_wastewater,4.35e-51,12.520,10.391,0.912
-Polynucleobacter sp AM 26B4,Lekunberri_2018_river_wastewater,8.89e-51,12.338,10.231,0.911
-Polynucleobacter cosmopolitanus,Lekunberri_2018_river_wastewater,3.43e-50,12.078,10.002,0.908
-GGB24856 SGB81948,Lekunberri_2018_river_wastewater,4.35e-50,12.278,10.178,0.908
-Candidatus Fonsibacter ubiquis,Lekunberri_2018_river_wastewater,9.59e-50,12.088,10.010,0.906
-GGB46527 SGB64388,Lekunberri_2018_river_wastewater,2.05e-49,11.884,9.831,0.905
-Candidatus Planktophila vernalis,Lekunberri_2018_river_wastewater,2.46e-49,12.112,10.031,0.905
-Limnohabitans sp 2KL 27,Lekunberri_2018_river_wastewater,4.76e-49,11.777,9.736,0.903
-Bradyrhizobium SGB11337,Lekunberri_2018_river_wastewater,3.90e-48,10.291,8.427,0.899
-GGB34754 SGB82226,Lekunberri_2018_river_wastewater,1.27e-47,11.882,9.829,0.896
-Polynucleobacter sp MWH Jannik1A5,Lekunberri_2018_river_wastewater,1.49e-47,11.708,9.676,0.896
-GGB25723 SGB106723,Lekunberri_2018_river_wastewater,8.70e-47,11.568,9.552,0.892
-Polynucleobacter asymbioticus,Lekunberri_2018_river_wastewater,3.34e-46,11.072,9.115,0.889
-Limnohabitans sp Hippo3,Lekunberri_2018_river_wastewater,6.42e-46,11.076,9.118,0.888
-GGB26951 SGB39152,Lekunberri_2018_river_wastewater,7.05e-45,10.738,8.821,0.882
-Candidatus Planktophila limnetica,Lekunberri_2018_river_wastewater,7.81e-45,11.039,9.086,0.882
-GGB34383 SGB60872,Lekunberri_2018_river_wastewater,1.00e-44,11.306,9.321,0.881
-Aquirufa lenticrescens,Lekunberri_2018_river_wastewater,1.15e-44,10.614,8.712,0.881
-GGB32489 SGB48813,Lekunberri_2018_river_wastewater,1.85e-44,11.002,9.054,0.880
-GGB25723 SGB84803,Lekunberri_2018_river_wastewater,1.96e-44,10.961,9.017,0.880
+Limnohabitans sp G3 2,Lekunberri_2018_river_wastewater,5.84e-102,12.695,11.041,0.926
+Polynucleobacter sp es MAR 4,Lekunberri_2018_river_wastewater,9.39e-102,11.830,10.232,0.926
+Candidatus Methylopumilus universalis,Lekunberri_2018_river_wastewater,6.22e-98,12.138,10.520,0.919
+Candidatus Planktophila vernalis,Lekunberri_2018_river_wastewater,4.72e-94,11.782,10.186,0.910
+GGB34754 SGB82226,Lekunberri_2018_river_wastewater,1.31e-90,11.552,9.972,0.902
+GGB25723 SGB106723,Lekunberri_2018_river_wastewater,5.51e-89,11.238,9.678,0.898
+GGB34383 SGB60872,Lekunberri_2018_river_wastewater,7.39e-85,10.976,9.432,0.887
+Limnohabitans sp Rim47,Lekunberri_2018_river_wastewater,1.80e-84,15.095,13.214,0.886
+GGB32489 SGB48813,Lekunberri_2018_river_wastewater,2.11e-84,10.672,9.148,0.885
+GGB25723 SGB84803,Lekunberri_2018_river_wastewater,2.40e-84,10.631,9.109,0.885
+GGB32349 SGB82186,Lekunberri_2018_river_wastewater,3.92e-84,10.443,8.933,0.885
+Limnohabitans sp 2KL 3,Lekunberri_2018_river_wastewater,3.85e-73,12.339,10.639,0.847
+Polynucleobacter sp AM 26B4,Lekunberri_2018_river_wastewater,4.76e-71,12.008,10.334,0.839
+Limnohabitans sp 63ED37 2,Lekunberri_2018_river_wastewater,6.64e-71,13.126,11.340,0.839
+GGB46527 SGB64388,Lekunberri_2018_river_wastewater,3.58e-69,11.554,9.908,0.831
+GGB38373 SGB52357,Lekunberri_2018_river_wastewater,7.50e-66,10.445,8.884,0.816
+Limnohabitans sp 2KL 27,Lekunberri_2018_river_wastewater,2.80e-56,11.447,9.697,0.766
+Candidatus Fonsibacter ubiquis,Lekunberri_2018_river_wastewater,1.37e-53,11.758,10.020,0.749
+GGB24856 SGB81948,Lekunberri_2018_river_wastewater,6.51e-53,11.948,10.196,0.745
+Polynucleobacter sp MWH CaK5,Lekunberri_2018_river_wastewater,2.92e-52,12.146,10.290,0.741
+Limnohabitans parvus,Lekunberri_2018_river_wastewater,3.28e-50,12.333,10.479,0.727
+GGB23683 SGB35384,Lekunberri_2018_river_wastewater,3.91e-42,8.697,7.223,0.665
+Actinomycetia unclassified SGB64102,Lekunberri_2018_river_wastewater,2.58e-39,9.369,7.785,0.640
+Polynucleobacter sp 31A FELB,Lekunberri_2018_river_wastewater,5.36e-39,12.111,10.149,0.637
+Candidatus Planktophila sulfonica,Lekunberri_2018_river_wastewater,9.84e-32,13.486,10.962,0.563
+Polynucleobacter sp 30F ANTBAC,Lekunberri_2018_river_wastewater,2.23e-30,10.361,8.571,0.548
+Rhodoluna limnophila,Lekunberri_2018_river_wastewater,6.13e-30,9.132,7.441,0.543
+Candidatus Planktophila lacus,Lekunberri_2018_river_wastewater,1.35e-29,10.395,8.484,0.539
+GGB26682 SGB64469,Schulz_2017_wastewater,6.28e-29,9.931,8.025,0.531
+GGB46525 SGB64386,Lekunberri_2018_river_wastewater,2.54e-27,12.282,9.951,0.511

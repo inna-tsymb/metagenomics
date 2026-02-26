@@ -1,17 +1,9 @@
 # Species-Group Association Statements
 
-## Update (2026-02-22): Dual-Mode Availability
-
-- This report is aligned with two execution modes: **normalized** and **non_normalized**.
-- Normalized mode applies lecture_02-style cohort balancing: **Schulz_2017_wastewater -> n=20**.
-- Non-normalized mode preserves original cohort sizes for impact comparison.
-- Full artifacts (CSV, PNG, TXT/MD reports) are available in mode-specific output folders.
-- Re-run all 03/04 dual-mode analyses with: `./run_all_dual_mode.sh`
-
 ## Summary Statistics
 
-- **Total species analyzed:** 567
-- **Significant associations (FDR < 0.05):** 557
+- **Total species analyzed:** 603
+- **Significant associations (FDR < 0.05):** 602
 - **Statements generated for:** Top 30 species
 
 ## Interpretation Guide
@@ -21,610 +13,610 @@
 - **β (Beta):** Effect size in CLR units; deviation from global mean abundance
   - β > 0 = enriched relative to average
   - β < 0 = depleted relative to average
-- **Effect size range:** 0.95 to 15.25 CLR units
-- **Mean R²:** 0.234 (average variance explained by group membership)
+- **Effect size range:** 1.78 to 14.78 CLR units
+- **Mean R²:** 0.229 (average variance explained by group membership)
 
 ---
 
 ## Top Associated Species
 
 
-### 1. **Limnohabitans sp Rim47**
+### 1. **Limnohabitans sp G3 2**
 
-**Statistical Significance:** p = 2.17e-102 | FDR = 1.23e-99 | Effect size = 15.247 CLR units | R² = 0.900
-
-| Metric | Value |
-|--------|-------|
-| **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +13.1976 |
-| **Mean abundance (enriched)** | 12.9567 |
-| **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -2.0497 |
-| **Mean abundance (depleted)** | -2.2905 |
-
-**Interpretation:** This species is strongly associated with wastewater source (p=2.17e-102). 
-It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +13.1976 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -2.0497 CLR units). This species may serve as a biomarker 
-for Lekunberri_2018_river_wastewater wastewater.
-
-
-### 2. **Candidatus Planktophila sulfonica**
-
-**Statistical Significance:** p = 3.45e-92 | FDR = 9.79e-90 | Effect size = 13.638 CLR units | R² = 0.875
+**Statistical Significance:** p = 9.83e-137 | FDR = 5.93e-134 | Effect size = 12.384 CLR units | R² = 0.888
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +11.6810 |
-| **Mean abundance (enriched)** | 11.3478 |
+| **β (enriched)** | +10.9981 |
+| **Mean abundance (enriched)** | 10.6753 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.9573 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3864 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=3.45e-92). 
+**Interpretation:** This species is strongly associated with wastewater source (p=9.83e-137). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +11.6810 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.9573 CLR units). This species may serve as a biomarker 
+(effect size: +10.9981 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3864 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 3. **Limnohabitans sp 63ED37 2**
+### 2. **Polynucleobacter sp es MAR 4**
 
-**Statistical Significance:** p = 2.63e-91 | FDR = 4.97e-89 | Effect size = 13.279 CLR units | R² = 0.872
+**Statistical Significance:** p = 1.65e-133 | FDR = 4.96e-131 | Effect size = 11.520 CLR units | R² = 0.883
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +11.3418 |
-| **Mean abundance (enriched)** | 10.9880 |
+| **β (enriched)** | +10.1687 |
+| **Mean abundance (enriched)** | 9.8108 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.9367 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3512 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=2.63e-91). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.65e-133). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +11.3418 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.9367 CLR units). This species may serve as a biomarker 
+(effect size: +10.1687 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3512 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 4. **Limnohabitans sp G3 2**
+### 3. **Candidatus Methylopumilus universalis**
 
-**Statistical Significance:** p = 7.82e-89 | FDR = 1.11e-86 | Effect size = 12.847 CLR units | R² = 0.865
+**Statistical Significance:** p = 8.25e-131 | FDR = 1.66e-128 | Effect size = 11.828 CLR units | R² = 0.877
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.9351 |
-| **Mean abundance (enriched)** | 10.5564 |
+| **β (enriched)** | +10.4643 |
+| **Mean abundance (enriched)** | 10.1189 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.9119 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3637 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=7.82e-89). 
+**Interpretation:** This species is strongly associated with wastewater source (p=8.25e-131). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.9351 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.9119 CLR units). This species may serve as a biomarker 
+(effect size: +10.4643 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3637 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 5. **GGB46525 SGB64386**
+### 4. **Candidatus Planktophila vernalis**
 
-**Statistical Significance:** p = 5.57e-87 | FDR = 6.32e-85 | Effect size = 12.434 CLR units | R² = 0.859
+**Statistical Significance:** p = 1.13e-125 | FDR = 1.70e-123 | Effect size = 11.471 CLR units | R² = 0.867
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.5458 |
-| **Mean abundance (enriched)** | 10.1434 |
+| **β (enriched)** | +10.1220 |
+| **Mean abundance (enriched)** | 9.7621 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8882 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3492 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=5.57e-87). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.13e-125). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.5458 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8882 CLR units). This species may serve as a biomarker 
+(effect size: +10.1220 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3492 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 6. **Limnohabitans sp 2KL 3**
+### 5. **Limnohabitans sp Rim47**
 
-**Statistical Significance:** p = 1.03e-86 | FDR = 9.74e-85 | Effect size = 12.491 CLR units | R² = 0.858
+**Statistical Significance:** p = 9.11e-123 | FDR = 1.10e-120 | Effect size = 14.785 CLR units | R² = 0.861
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.5993 |
-| **Mean abundance (enriched)** | 10.2002 |
+| **β (enriched)** | +13.2543 |
+| **Mean abundance (enriched)** | 13.0756 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8914 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.5305 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=1.03e-86). 
+**Interpretation:** This species is strongly associated with wastewater source (p=9.11e-123). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.5993 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8914 CLR units). This species may serve as a biomarker 
+(effect size: +13.2543 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.5305 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 7. **Polynucleobacter sp es MAR 4**
+### 6. **GGB34754 SGB82226**
 
-**Statistical Significance:** p = 1.52e-86 | FDR = 1.23e-84 | Effect size = 11.982 CLR units | R² = 0.858
+**Statistical Significance:** p = 2.30e-121 | FDR = 2.31e-119 | Effect size = 11.242 CLR units | R² = 0.858
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.1202 |
-| **Mean abundance (enriched)** | 9.6919 |
+| **β (enriched)** | +9.9022 |
+| **Mean abundance (enriched)** | 9.5330 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8622 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3399 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=1.52e-86). 
+**Interpretation:** This species is strongly associated with wastewater source (p=2.30e-121). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.1202 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8622 CLR units). This species may serve as a biomarker 
+(effect size: +9.9022 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3399 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 8. **Limnohabitans sp Rim11**
+### 7. **GGB25723 SGB106723**
 
-**Statistical Significance:** p = 5.54e-86 | FDR = 3.93e-84 | Effect size = 12.489 CLR units | R² = 0.856
+**Statistical Significance:** p = 1.19e-118 | FDR = 1.02e-116 | Effect size = 10.928 CLR units | R² = 0.851
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.5973 |
-| **Mean abundance (enriched)** | 10.1980 |
+| **β (enriched)** | +9.6005 |
+| **Mean abundance (enriched)** | 9.2185 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8913 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3271 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=5.54e-86). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.19e-118). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.5973 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8913 CLR units). This species may serve as a biomarker 
+(effect size: +9.6005 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3271 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 9. **Candidatus Methylopumilus universalis**
+### 8. **GGB34383 SGB60872**
 
-**Statistical Significance:** p = 6.02e-85 | FDR = 3.56e-83 | Effect size = 12.291 CLR units | R² = 0.853
+**Statistical Significance:** p = 1.81e-113 | FDR = 1.36e-111 | Effect size = 10.665 CLR units | R² = 0.839
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.4106 |
-| **Mean abundance (enriched)** | 10.0000 |
+| **β (enriched)** | +9.3490 |
+| **Mean abundance (enriched)** | 8.9563 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8799 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3164 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=6.02e-85). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.81e-113). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.4106 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8799 CLR units). This species may serve as a biomarker 
+(effect size: +9.3490 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3164 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 10. **Polynucleobacter sp MWH CaK5**
+### 9. **Limnohabitans sp 2KL 3**
 
-**Statistical Significance:** p = 6.27e-85 | FDR = 3.56e-83 | Effect size = 12.298 CLR units | R² = 0.853
+**Statistical Significance:** p = 5.54e-104 | FDR = 3.71e-102 | Effect size = 12.028 CLR units | R² = 0.812
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.4177 |
-| **Mean abundance (enriched)** | 10.0075 |
+| **β (enriched)** | +10.6129 |
+| **Mean abundance (enriched)** | 10.3190 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8804 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.4153 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=6.27e-85). 
+**Interpretation:** This species is strongly associated with wastewater source (p=5.54e-104). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.4177 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8804 CLR units). This species may serve as a biomarker 
+(effect size: +10.6129 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.4153 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 11. **Polynucleobacter sp AP Ainpum 60 G11**
+### 10. **Limnohabitans sp 63ED37 2**
 
-**Statistical Significance:** p = 8.10e-85 | FDR = 4.18e-83 | Effect size = 12.342 CLR units | R² = 0.852
+**Statistical Significance:** p = 1.33e-102 | FDR = 8.03e-101 | Effect size = 12.816 CLR units | R² = 0.808
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.4593 |
-| **Mean abundance (enriched)** | 10.0516 |
+| **β (enriched)** | +11.3453 |
+| **Mean abundance (enriched)** | 11.1068 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8829 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.4706 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=8.10e-85). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.33e-102). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.4593 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8829 CLR units). This species may serve as a biomarker 
+(effect size: +11.3453 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.4706 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 12. **Polynucleobacter sp AM 26B4**
+### 11. **Polynucleobacter sp AM 26B4**
 
-**Statistical Significance:** p = 5.20e-84 | FDR = 2.46e-82 | Effect size = 12.160 CLR units | R² = 0.850
+**Statistical Significance:** p = 8.67e-101 | FDR = 4.75e-99 | Effect size = 11.698 CLR units | R² = 0.802
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.2878 |
-| **Mean abundance (enriched)** | 9.8698 |
+| **β (enriched)** | +10.2983 |
+| **Mean abundance (enriched)** | 9.9886 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8725 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3995 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=5.20e-84). 
+**Interpretation:** This species is strongly associated with wastewater source (p=8.67e-101). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.2878 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8725 CLR units). This species may serve as a biomarker 
+(effect size: +10.2983 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3995 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 13. **GGB24856 SGB81948**
+### 12. **GGB46527 SGB64388**
 
-**Statistical Significance:** p = 5.62e-83 | FDR = 2.45e-81 | Effect size = 12.100 CLR units | R² = 0.846
+**Statistical Significance:** p = 1.33e-97 | FDR = 6.67e-96 | Effect size = 11.244 CLR units | R² = 0.792
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.2308 |
-| **Mean abundance (enriched)** | 9.8092 |
+| **β (enriched)** | +9.8624 |
+| **Mean abundance (enriched)** | 9.5349 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8690 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3816 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=5.62e-83). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.33e-97). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.2308 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8690 CLR units). This species may serve as a biomarker 
+(effect size: +9.8624 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3816 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 14. **Polynucleobacter cosmopolitanus**
+### 13. **Limnohabitans sp 2KL 27**
 
-**Statistical Significance:** p = 1.14e-82 | FDR = 4.63e-81 | Effect size = 11.900 CLR units | R² = 0.845
+**Statistical Significance:** p = 2.83e-82 | FDR = 1.31e-80 | Effect size = 11.137 CLR units | R² = 0.735
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.0425 |
-| **Mean abundance (enriched)** | 9.6095 |
+| **β (enriched)** | +9.6894 |
+| **Mean abundance (enriched)** | 9.4275 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8575 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.4472 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=1.14e-82). 
+**Interpretation:** This species is strongly associated with wastewater source (p=2.83e-82). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.0425 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8575 CLR units). This species may serve as a biomarker 
+(effect size: +9.6894 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.4472 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 15. **Candidatus Fonsibacter ubiquis**
+### 14. **Candidatus Fonsibacter ubiquis**
 
-**Statistical Significance:** p = 4.07e-82 | FDR = 1.54e-80 | Effect size = 11.910 CLR units | R² = 0.843
+**Statistical Significance:** p = 2.46e-78 | FDR = 1.06e-76 | Effect size = 11.448 CLR units | R² = 0.718
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.0520 |
-| **Mean abundance (enriched)** | 9.6196 |
+| **β (enriched)** | +10.0081 |
+| **Mean abundance (enriched)** | 9.7384 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8581 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.4395 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=4.07e-82). 
+**Interpretation:** This species is strongly associated with wastewater source (p=2.46e-78). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.0520 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8581 CLR units). This species may serve as a biomarker 
+(effect size: +10.0081 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.4395 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 16. **Candidatus Planktophila vernalis**
+### 15. **Polynucleobacter sp MWH CaK5**
 
-**Statistical Significance:** p = 1.26e-81 | FDR = 4.46e-80 | Effect size = 11.934 CLR units | R² = 0.841
+**Statistical Significance:** p = 7.18e-78 | FDR = 2.89e-76 | Effect size = 11.836 CLR units | R² = 0.716
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.0743 |
-| **Mean abundance (enriched)** | 9.6432 |
+| **β (enriched)** | +10.3212 |
+| **Mean abundance (enriched)** | 10.1264 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8595 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.5144 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=1.26e-81). 
+**Interpretation:** This species is strongly associated with wastewater source (p=7.18e-78). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.0743 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8595 CLR units). This species may serve as a biomarker 
+(effect size: +10.3212 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.5144 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 17. **GGB46527 SGB64388**
+### 16. **GGB24856 SGB81948**
 
-**Statistical Significance:** p = 3.11e-81 | FDR = 1.04e-79 | Effect size = 11.707 CLR units | R² = 0.840
+**Statistical Significance:** p = 9.07e-78 | FDR = 3.42e-76 | Effect size = 11.637 CLR units | R² = 0.715
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.8601 |
-| **Mean abundance (enriched)** | 9.4160 |
+| **β (enriched)** | +10.1891 |
+| **Mean abundance (enriched)** | 9.9281 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8464 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.4482 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=3.11e-81). 
+**Interpretation:** This species is strongly associated with wastewater source (p=9.07e-78). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.8601 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8464 CLR units). This species may serve as a biomarker 
+(effect size: +10.1891 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.4482 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 18. **Limnohabitans sp 2KL 27**
+### 17. **Limnohabitans parvus**
 
-**Statistical Significance:** p = 1.69e-80 | FDR = 5.31e-79 | Effect size = 11.599 CLR units | R² = 0.837
+**Statistical Significance:** p = 1.31e-74 | FDR = 4.66e-73 | Effect size = 12.023 CLR units | R² = 0.700
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.7589 |
-| **Mean abundance (enriched)** | 9.3086 |
+| **β (enriched)** | +10.5098 |
+| **Mean abundance (enriched)** | 10.3140 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8402 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.5133 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=1.69e-80). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.31e-74). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.7589 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8402 CLR units). This species may serve as a biomarker 
+(effect size: +10.5098 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.5133 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 19. **GGB34754 SGB82226**
+### 18. **Polynucleobacter sp 31A FELB**
 
-**Statistical Significance:** p = 6.97e-79 | FDR = 2.08e-77 | Effect size = 11.705 CLR units | R² = 0.831
+**Statistical Significance:** p = 6.12e-59 | FDR = 2.05e-57 | Effect size = 11.800 CLR units | R² = 0.615
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.8583 |
-| **Mean abundance (enriched)** | 9.4141 |
+| **β (enriched)** | +10.2188 |
+| **Mean abundance (enriched)** | 10.0912 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8463 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.5815 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=6.97e-79). 
+**Interpretation:** This species is strongly associated with wastewater source (p=6.12e-59). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.8583 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8463 CLR units). This species may serve as a biomarker 
+(effect size: +10.2188 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.5815 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 20. **Polynucleobacter sp MWH Jannik1A5**
+### 19. **Actinomycetia unclassified SGB64102**
 
-**Statistical Significance:** p = 2.10e-78 | FDR = 5.95e-77 | Effect size = 11.530 CLR units | R² = 0.829
+**Statistical Significance:** p = 1.21e-56 | FDR = 3.85e-55 | Effect size = 9.059 CLR units | R² = 0.601
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.6940 |
-| **Mean abundance (enriched)** | 9.2397 |
+| **β (enriched)** | +7.7166 |
+| **Mean abundance (enriched)** | 7.3499 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8363 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.3424 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=2.10e-78). 
+**Interpretation:** This species is strongly associated with wastewater source (p=1.21e-56). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.6940 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8363 CLR units). This species may serve as a biomarker 
+(effect size: +7.7166 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.3424 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 21. **Sphingorhabdus rigui**
+### 20. **Candidatus Planktophila sulfonica**
 
-**Statistical Significance:** p = 2.81e-78 | FDR = 7.58e-77 | Effect size = 13.642 CLR units | R² = 0.829
+**Statistical Significance:** p = 3.43e-50 | FDR = 1.03e-48 | Effect size = 13.176 CLR units | R² = 0.558
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +11.6349 |
-| **Mean abundance (enriched)** | 11.3515 |
+| **β (enriched)** | +11.2375 |
+| **Mean abundance (enriched)** | 11.4666 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -2.0071 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.9383 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=2.81e-78). 
+**Interpretation:** This species is strongly associated with wastewater source (p=3.43e-50). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +11.6349 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -2.0071 CLR units). This species may serve as a biomarker 
+(effect size: +11.2375 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.9383 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 22. **GGB25723 SGB106723**
+### 21. **Polynucleobacter sp 30F ANTBAC**
 
-**Statistical Significance:** p = 4.29e-77 | FDR = 1.11e-75 | Effect size = 11.390 CLR units | R² = 0.824
+**Statistical Significance:** p = 2.14e-45 | FDR = 6.14e-44 | Effect size = 10.051 CLR units | R² = 0.523
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.5619 |
-| **Mean abundance (enriched)** | 9.0996 |
+| **β (enriched)** | +8.5782 |
+| **Mean abundance (enriched)** | 8.3420 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8282 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.4729 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=4.29e-77). 
+**Interpretation:** This species is strongly associated with wastewater source (p=2.14e-45). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.5619 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8282 CLR units). This species may serve as a biomarker 
+(effect size: +8.5782 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.4729 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 23. **Polynucleobacter asymbioticus**
+### 22. **Candidatus Planktophila lacus**
 
-**Statistical Significance:** p = 3.35e-75 | FDR = 8.25e-74 | Effect size = 10.894 CLR units | R² = 0.817
+**Statistical Significance:** p = 5.59e-45 | FDR = 1.53e-43 | Effect size = 10.085 CLR units | R² = 0.519
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.0940 |
-| **Mean abundance (enriched)** | 8.6032 |
+| **β (enriched)** | +8.5352 |
+| **Mean abundance (enriched)** | 8.3756 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.7997 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.5495 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=3.35e-75). 
+**Interpretation:** This species is strongly associated with wastewater source (p=5.59e-45). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.0940 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.7997 CLR units). This species may serve as a biomarker 
+(effect size: +8.5352 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.5495 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 24. **Limnohabitans sp Hippo3**
+### 23. **Rhodoluna limnophila**
 
-**Statistical Significance:** p = 7.65e-75 | FDR = 1.81e-73 | Effect size = 10.898 CLR units | R² = 0.815
+**Statistical Significance:** p = 8.11e-44 | FDR = 2.13e-42 | Effect size = 8.822 CLR units | R² = 0.510
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.0978 |
-| **Mean abundance (enriched)** | 8.6072 |
+| **β (enriched)** | +7.4120 |
+| **Mean abundance (enriched)** | 7.1130 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8000 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.4101 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=7.65e-75). 
+**Interpretation:** This species is strongly associated with wastewater source (p=8.11e-44). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.0978 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8000 CLR units). This species may serve as a biomarker 
+(effect size: +7.4120 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.4101 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 25. **GGB34383 SGB60872**
+### 24. **GGB46525 SGB64386**
 
-**Statistical Significance:** p = 7.99e-74 | FDR = 1.81e-72 | Effect size = 11.128 CLR units | R² = 0.811
+**Statistical Significance:** p = 6.35e-43 | FDR = 1.59e-41 | Effect size = 11.971 CLR units | R² = 0.503
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.3148 |
-| **Mean abundance (enriched)** | 8.8374 |
+| **β (enriched)** | +10.1559 |
+| **Mean abundance (enriched)** | 10.2623 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.8132 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.8155 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=7.99e-74). 
+**Interpretation:** This species is strongly associated with wastewater source (p=6.35e-43). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.3148 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.8132 CLR units). This species may serve as a biomarker 
+(effect size: +10.1559 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.8155 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 26. **Candidatus Planktophila limnetica**
+### 25. **Bacteroides graminisolvens**
 
-**Statistical Significance:** p = 2.34e-73 | FDR = 5.10e-72 | Effect size = 10.862 CLR units | R² = 0.809
+**Statistical Significance:** p = 7.35e-43 | FDR = 1.77e-41 | Effect size = 9.919 CLR units | R² = 0.503
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.0636 |
-| **Mean abundance (enriched)** | 8.5710 |
-| **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.7979 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (enriched)** | +7.8831 |
+| **Mean abundance (enriched)** | 9.6009 |
+| **Depleted in** | Schulz_2017_wastewater |
+| **β (depleted)** | -2.0356 |
+| **Mean abundance (depleted)** | -0.3177 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=2.34e-73). 
+**Interpretation:** This species is strongly associated with wastewater source (p=7.35e-43). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.0636 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.7979 CLR units). This species may serve as a biomarker 
+(effect size: +7.8831 CLR units) and depleted in **Schulz_2017_wastewater** 
+(effect size: -2.0356 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 27. **GGB46797 SGB64687**
+### 26. **Aliarcobacter cryaerophilus**
 
-**Statistical Significance:** p = 5.55e-73 | FDR = 1.17e-71 | Effect size = 12.285 CLR units | R² = 0.807
+**Statistical Significance:** p = 2.96e-41 | FDR = 6.87e-40 | Effect size = 11.617 CLR units | R² = 0.490
+
+| Metric | Value |
+|--------|-------|
+| **Enriched in** | Rowe_2017_hospital_wastewater |
+| **β (enriched)** | +8.9854 |
+| **Mean abundance (enriched)** | 11.9193 |
+| **Depleted in** | Schulz_2017_wastewater |
+| **β (depleted)** | -2.6320 |
+| **Mean abundance (depleted)** | 0.3018 |
+
+**Interpretation:** This species is strongly associated with wastewater source (p=2.96e-41). 
+It is substantially enriched in **Rowe_2017_hospital_wastewater** 
+(effect size: +8.9854 CLR units) and depleted in **Schulz_2017_wastewater** 
+(effect size: -2.6320 CLR units). This species may serve as a biomarker 
+for Rowe_2017_hospital_wastewater wastewater.
+
+
+### 27. **Aquirufa antheringensis**
+
+**Statistical Significance:** p = 6.68e-41 | FDR = 1.49e-39 | Effect size = 13.414 CLR units | R² = 0.487
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +10.3263 |
-| **Mean abundance (enriched)** | 9.9949 |
+| **β (enriched)** | +11.4324 |
+| **Mean abundance (enriched)** | 11.7048 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.9592 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.9815 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=5.55e-73). 
+**Interpretation:** This species is strongly associated with wastewater source (p=6.68e-41). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +10.3263 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.9592 CLR units). This species may serve as a biomarker 
+(effect size: +11.4324 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.9815 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 28. **GGB32489 SGB48813**
+### 28. **GGB26682 SGB64469**
 
-**Statistical Significance:** p = 8.62e-73 | FDR = 1.75e-71 | Effect size = 10.824 CLR units | R² = 0.806
+**Statistical Significance:** p = 1.31e-40 | FDR = 2.82e-39 | Effect size = 10.438 CLR units | R² = 0.485
+
+| Metric | Value |
+|--------|-------|
+| **Enriched in** | Schulz_2017_wastewater |
+| **β (enriched)** | +5.4784 |
+| **Mean abundance (enriched)** | 8.7291 |
+| **Depleted in** | Rowe_2017_hospital_wastewater |
+| **β (depleted)** | -4.9598 |
+| **Mean abundance (depleted)** | -1.7091 |
+
+**Interpretation:** This species is strongly associated with wastewater source (p=1.31e-40). 
+It is substantially enriched in **Schulz_2017_wastewater** 
+(effect size: +5.4784 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -4.9598 CLR units). This species may serve as a biomarker 
+for Schulz_2017_wastewater wastewater.
+
+
+### 29. **Polynucleobacter difficilis**
+
+**Statistical Significance:** p = 4.86e-40 | FDR = 1.01e-38 | Effect size = 11.025 CLR units | R² = 0.480
 
 | Metric | Value |
 |--------|-------|
 | **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +9.0286 |
-| **Mean abundance (enriched)** | 8.5339 |
+| **β (enriched)** | +9.3420 |
+| **Mean abundance (enriched)** | 9.3161 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.7958 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -1.6833 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=8.62e-73). 
+**Interpretation:** This species is strongly associated with wastewater source (p=4.86e-40). 
 It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +9.0286 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.7958 CLR units). This species may serve as a biomarker 
+(effect size: +9.3420 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -1.6833 CLR units). This species may serve as a biomarker 
 for Lekunberri_2018_river_wastewater wastewater.
 
 
-### 29. **GGB25723 SGB84803**
+### 30. **actinobacterium SCGC AAA028 A23**
 
-**Statistical Significance:** p = 1.14e-72 | FDR = 2.23e-71 | Effect size = 10.783 CLR units | R² = 0.806
+**Statistical Significance:** p = 1.22e-39 | FDR = 2.45e-38 | Effect size = 9.399 CLR units | R² = 0.477
 
 | Metric | Value |
 |--------|-------|
-| **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +8.9895 |
-| **Mean abundance (enriched)** | 8.4923 |
+| **Enriched in** | Chopyk_2020_pond |
+| **β (enriched)** | +5.7148 |
+| **Mean abundance (enriched)** | 7.6898 |
 | **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.7934 |
-| **Mean abundance (depleted)** | -2.2905 |
+| **β (depleted)** | -3.6842 |
+| **Mean abundance (depleted)** | -1.7091 |
 
-**Interpretation:** This species is strongly associated with wastewater source (p=1.14e-72). 
-It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +8.9895 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.7934 CLR units). This species may serve as a biomarker 
-for Lekunberri_2018_river_wastewater wastewater.
-
-
-### 30. **Candidatus Nanopelagicus SGB64093**
-
-**Statistical Significance:** p = 1.73e-72 | FDR = 3.26e-71 | Effect size = 10.761 CLR units | R² = 0.805
-
-| Metric | Value |
-|--------|-------|
-| **Enriched in** | Lekunberri_2018_river_wastewater |
-| **β (enriched)** | +8.9693 |
-| **Mean abundance (enriched)** | 8.4709 |
-| **Depleted in** | Rowe_2017_hospital_wastewater |
-| **β (depleted)** | -1.7921 |
-| **Mean abundance (depleted)** | -2.2905 |
-
-**Interpretation:** This species is strongly associated with wastewater source (p=1.73e-72). 
-It is substantially enriched in **Lekunberri_2018_river_wastewater** 
-(effect size: +8.9693 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
-(effect size: -1.7921 CLR units). This species may serve as a biomarker 
-for Lekunberri_2018_river_wastewater wastewater.
+**Interpretation:** This species is strongly associated with wastewater source (p=1.22e-39). 
+It is substantially enriched in **Chopyk_2020_pond** 
+(effect size: +5.7148 CLR units) and depleted in **Rowe_2017_hospital_wastewater** 
+(effect size: -3.6842 CLR units). This species may serve as a biomarker 
+for Chopyk_2020_pond wastewater.
 

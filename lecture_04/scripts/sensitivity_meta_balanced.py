@@ -5,9 +5,9 @@ SENSITIVITY ANALYSIS: META-ANALYSIS WITH BALANCED COHORTS
 Re-run meta-analysis with downsampled cohorts to test robustness.
 
 Strategy:
-- Use balanced data from lecture_03 (n=12 per cohort, 48 total)
+- Use balanced data from lecture_03 (n=12 per cohort)
 - Re-run identical meta-analysis pipeline
-- Compare results with original meta-analysis (209 samples)
+- Compare results with original meta-analysis for the same mode
 - Assess concordance and effect size correlation
 """
 
@@ -32,6 +32,7 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 CLR_FILE = os.getenv('CLR_FILE', '../lecture_03/output/sensitivity_balanced/abundance_clr_balanced.csv')
 METADATA_FILE = os.getenv('METADATA_FILE', '../lecture_03/output/sensitivity_balanced/metadata_balanced.csv')
 ORIGINAL_META_RESULTS = os.getenv('ORIGINAL_META_RESULTS', 'output/meta_analysis/meta_analysis_results_all.csv')
+ORIGINAL_METADATA_FILE = os.getenv('ORIGINAL_METADATA_FILE', '../lecture_03/output/filtering_clr_analysis/metadata_aligned.csv')
 
 print("="*70)
 print("SENSITIVITY ANALYSIS: META-ANALYSIS WITH BALANCED COHORTS")
@@ -73,7 +74,15 @@ for cohort, count in cohort_counts.items():
     print(f"    • {cohort}: {count} samples")
 
 n_cohorts = len(cohort_counts)
+n_balanced_samples = len(metadata)
 print(f"  Total cohorts: {n_cohorts}")
+
+# Load original metadata (same branch) for dynamic sample-size reporting
+metadata_original = pd.read_csv(ORIGINAL_METADATA_FILE, index_col=0)
+if metadata_original.index.duplicated().any():
+    metadata_original = metadata_original[~metadata_original.index.duplicated(keep='first')]
+n_original_samples = len(metadata_original)
+cohort_counts_original = metadata_original['study_code'].value_counts().sort_index()
 
 # ============================================================================
 # STEP 2: BATCH EFFECT ASSESSMENT (BALANCED)
@@ -248,7 +257,7 @@ results_balanced[results_balanced['significant']].to_csv(
 n_sig_balanced = results_balanced['significant'].sum()
 pct_sig_balanced = (n_sig_balanced / len(results_balanced)) * 100
 
-print(f"\n  Results (balanced n=48):")
+print(f"\n  Results (balanced n={n_balanced_samples}):")
 print(f"    • Species tested: {len(results_balanced)}")
 print(f"    • Significant (FDR<0.05): {n_sig_balanced}/{len(results_balanced)} ({pct_sig_balanced:.1f}%)")
 print(f"    • Median I² heterogeneity: {results_balanced['I2_heterogeneity'].median():.1f}%")
@@ -256,7 +265,7 @@ print(f"    • Median I² heterogeneity: {results_balanced['I2_heterogeneity'].
 # ============================================================================
 # STEP 4: COMPARE WITH ORIGINAL META-ANALYSIS
 # ============================================================================
-print("\nSTEP 4: COMPARE WITH ORIGINAL META-ANALYSIS (n=209)")
+print("\nSTEP 4: COMPARE WITH ORIGINAL META-ANALYSIS")
 print("-" * 70)
 
 # Load original meta-analysis results
@@ -270,7 +279,7 @@ print(f"  ✓ Loaded original meta-analysis: {len(results_original)} species")
 n_sig_original = results_original['significant'].sum()
 pct_sig_original = (n_sig_original / len(results_original)) * 100
 
-print(f"  Results (original n=209):")
+print(f"  Results (original n={n_original_samples}):")
 print(f"    • Species tested: {len(results_original)}")
 print(f"    • Significant (FDR<0.05): {n_sig_original}/{len(results_original)} ({pct_sig_original:.1f}%)")
 print(f"    • Median I² heterogeneity: {results_original['I2_heterogeneity'].median():.1f}%")
@@ -338,8 +347,8 @@ ax.scatter(comparison['pooled_effect_original'],
 max_val = max(abs(comparison['pooled_effect_original']).max(),
               abs(comparison['pooled_effect_balanced']).max())
 ax.plot([-max_val, max_val], [-max_val, max_val], 'k--', lw=1, alpha=0.5, label='y=x')
-ax.set_xlabel('Pooled Effect - Original (n=209)', fontsize=10)
-ax.set_ylabel('Pooled Effect - Balanced (n=48)', fontsize=10)
+ax.set_xlabel(f'Pooled Effect - Original (n={n_original_samples})', fontsize=10)
+ax.set_ylabel(f'Pooled Effect - Balanced (n={n_balanced_samples})', fontsize=10)
 ax.set_title(f'A) Pooled Effect Correlation (r={eff_corr:.3f})', fontsize=11, fontweight='bold')
 ax.legend(['y=x', 'Both sig', 'Not both'], fontsize=8)
 ax.grid(True, alpha=0.3)
@@ -351,8 +360,8 @@ ax.scatter(comparison['log_p_original'],
           alpha=0.5, s=20, c=colors, edgecolors='none')
 max_val = max(comparison['log_p_original'].max(), comparison['log_p_balanced'].max())
 ax.plot([0, max_val], [0, max_val], 'k--', lw=1, alpha=0.5)
-ax.set_xlabel('-log10(p) - Original (n=209)', fontsize=10)
-ax.set_ylabel('-log10(p) - Balanced (n=48)', fontsize=10)
+ax.set_xlabel(f'-log10(p) - Original (n={n_original_samples})', fontsize=10)
+ax.set_ylabel(f'-log10(p) - Balanced (n={n_balanced_samples})', fontsize=10)
 ax.set_title(f'B) P-value Correlation (r={p_corr:.3f})', fontsize=11, fontweight='bold')
 ax.grid(True, alpha=0.3)
 
@@ -398,6 +407,7 @@ fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 # Panel A: PCA (balanced)
 ax = axes[0]
 cohort_colors = {'Chu_2017_sludge': '#e74c3c',
+                'Chopyk_2020_pond': '#f39c12',
                 'Lekunberri_2018_river_wastewater': '#3498db',
                 'Rowe_2017_hospital_wastewater': '#2ecc71',
                 'Schulz_2017_wastewater': '#9b59b6'}
@@ -412,13 +422,13 @@ for cohort in cohort_counts.index:
 
 ax.set_xlabel(f'PC1 ({var_exp[0]:.1f}% variance)', fontsize=10)
 ax.set_ylabel(f'PC2 ({var_exp[1]:.1f}% variance)', fontsize=10)
-ax.set_title('A) PCA - Balanced Cohorts (n=12 each)', fontsize=11, fontweight='bold')
+ax.set_title(f'A) PCA - Balanced Cohorts (n={metadata["study_code"].value_counts().min()} each)', fontsize=11, fontweight='bold')
 ax.legend(fontsize=7, loc='best')
 ax.grid(True, alpha=0.3)
 
 # Panel B: Significance rates comparison
 ax = axes[1]
-datasets = ['Original\n(n=209)', 'Balanced\n(n=48)']
+datasets = [f'Original\n(n={n_original_samples})', f'Balanced\n(n={n_balanced_samples})']
 sig_rates = [pct_sig_original, pct_sig_balanced]
 bars = ax.bar(datasets, sig_rates, color=['#9b59b6', '#e67e22'], alpha=0.7, edgecolor='black', linewidth=1)
 ax.set_ylabel('% Significant Species (FDR<0.05)', fontsize=10)
@@ -443,6 +453,19 @@ plt.close()
 print("\nSTEP 6: GENERATE SUMMARY REPORT")
 print("-" * 70)
 
+original_cohort_lines = []
+for cohort, count in cohort_counts_original.items():
+    pct = (count / n_original_samples) * 100 if n_original_samples else 0
+    original_cohort_lines.append(f"  • {cohort}: {count} samples ({pct:.1f}%)")
+
+balanced_cohort_lines = []
+for cohort, count in cohort_counts.items():
+    pct = (count / n_balanced_samples) * 100 if n_balanced_samples else 0
+    balanced_cohort_lines.append(f"  • {cohort}: {count} samples ({pct:.1f}%)")
+
+orig_imbalance_ratio = cohort_counts_original.max() / cohort_counts_original.min()
+balanced_imbalance_ratio = cohort_counts.max() / cohort_counts.min()
+
 report = f"""SENSITIVITY ANALYSIS REPORT: META-ANALYSIS WITH BALANCED COHORTS
 {'='*70}
 
@@ -454,17 +477,14 @@ using balanced cohorts (n=12 each) from lecture_03 sensitivity analysis.
 SAMPLE SIZE COMPARISON
 ---------------------
 Original meta-analysis (lecture_04):
-  • Total samples: 209 (from lecture_03 unbalanced)
-  • Schulz: 128 samples (61%)
-  • Chu: 49 samples (23%)
-  • Rowe: 20 samples (10%)
-  • Lekunberri: 12 samples (6%)
-  • Imbalance ratio: 10.7x
+    • Total samples: {n_original_samples}
+{chr(10).join(original_cohort_lines)}
+    • Imbalance ratio: {orig_imbalance_ratio:.1f}x
 
 Balanced meta-analysis:
-  • Total samples: 48
-  • All cohorts: 12 samples each (25%)
-  • Imbalance ratio: 1.0x (perfectly balanced)
+    • Total samples: {n_balanced_samples}
+{chr(10).join(balanced_cohort_lines)}
+    • Imbalance ratio: {balanced_imbalance_ratio:.1f}x
 
 BATCH EFFECTS (BALANCED COHORTS)
 --------------------------------
@@ -484,12 +504,12 @@ report += f"""
 
 META-ANALYSIS RESULTS
 ---------------------
-Original (n=209):
+Original (n={n_original_samples}):
   • Species tested: {len(results_original)}
   • Significant (FDR<0.05): {n_sig_original}/{len(results_original)} ({pct_sig_original:.1f}%)
   • Median I² heterogeneity: {results_original['I2_heterogeneity'].median():.1f}%
 
-Balanced (n=48):
+Balanced (n={n_balanced_samples}):
   • Species tested: {len(results_balanced)}
   • Significant (FDR<0.05): {n_sig_balanced}/{len(results_balanced)} ({pct_sig_balanced:.1f}%)
   • Median I² heterogeneity: {results_balanced['I2_heterogeneity'].median():.1f}%
@@ -561,7 +581,7 @@ if both_sig/len(comparison) > 0.7 and abs(eff_corr) > 0.7:
     report += "✓ Meta-analysis results are ROBUST to sample size imbalance.\n"
     report += "✓ Pooled effects are consistent regardless of balancing.\n"
     report += "✓ Cross-cohort patterns genuine, not driven by Schulz dominance.\n"
-    report += "✓ Original meta-analysis (n=209) is valid and preferred (higher power).\n"
+    report += f"✓ Original meta-analysis (n={n_original_samples}) is valid and preferred (higher power).\n"
 elif both_sig/len(comparison) > 0.5:
     report += "⚠ Meta-analysis shows MODERATE robustness to sample imbalance.\n"
     report += "⚠ Focus on species significant in BOTH analyses for highest confidence.\n"
@@ -578,7 +598,7 @@ RECOMMENDATION
 """
 
 if both_sig/len(comparison) > 0.7 and abs(eff_corr) > 0.7:
-    report += "✓ Use original meta-analysis (n=209) as primary results.\n"
+    report += f"✓ Use original meta-analysis (n={n_original_samples}) as primary results.\n"
     report += f"✓ {both_sig} species significant in both = high-confidence meta-biomarkers.\n"
     report += "✓ Report sensitivity analysis as validation of robustness.\n"
 elif both_sig/len(comparison) > 0.5:
@@ -593,7 +613,7 @@ report += f"""
 
 FILES GENERATED
 ---------------
-• meta_analysis_balanced_all.csv - All species (balanced, n=48)
+• meta_analysis_balanced_all.csv - All species (balanced, n={n_balanced_samples})
 • meta_analysis_balanced_significant.csv - Significant species only
 • comparison_original_vs_balanced_meta.csv - Side-by-side comparison
 • batch_effect_tests_balanced.csv - Batch effect ANOVA results

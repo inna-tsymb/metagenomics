@@ -9,99 +9,104 @@ by downsampling all cohorts to equal size (n=12).
 SAMPLE SIZE COMPARISON
 ---------------------
 Original dataset:
-  • Schulz_2017_wastewater: 128 samples (61%)
-  • Chu_2017_sludge: 49 samples (23%)
-  • Rowe_2017_hospital_wastewater: 20 samples (10%)
-  • Lekunberri_2018_river_wastewater: 12 samples (6%)
-  Total: 209 samples
+  • Chopyk_2020_pond: 86 samples (29.2%)
+  • Chu_2017_sludge: 49 samples (16.6%)
+  • Lekunberri_2018_river_wastewater: 12 samples (4.1%)
+  • Rowe_2017_hospital_wastewater: 20 samples (6.8%)
+  • Schulz_2017_wastewater: 128 samples (43.4%)
+    Total: 295 samples
   Imbalance ratio: 10.7x
 
 Balanced dataset:
-  • All cohorts: 12 samples each (25%)
-  Total: 48 samples
+  • Chopyk_2020_pond: 12 samples (20.0%)
+  • Chu_2017_sludge: 12 samples (20.0%)
+  • Lekunberri_2018_river_wastewater: 12 samples (20.0%)
+  • Rowe_2017_hospital_wastewater: 12 samples (20.0%)
+  • Schulz_2017_wastewater: 12 samples (20.0%)
+    Total: 60 samples
   Imbalance ratio: 1.0x (perfectly balanced)
 
 ASSOCIATION ANALYSIS RESULTS
 -----------------------------
-Original (n=209):
-  • Species tested: 567
-  • Significant (FDR<0.05): 557/567 (98.2%)
-  • Effect size range: 0.95 - 15.25 CLR
+Original (n=295):
+  • Species tested: 603
+  • Significant (FDR<0.05): 602/603 (99.8%)
+  • Effect size range: 1.78 - 14.78 CLR
 
-Balanced (n=48):
-  • Species tested: 567
-  • Significant (FDR<0.05): 421/567 (74.3%)
-  • Effect size range: 0.79 - 15.10 CLR
+Balanced (n=60):
+  • Species tested: 603
+  • Significant (FDR<0.05): 542/603 (89.9%)
+  • Effect size range: 1.80 - 14.88 CLR
 
 CONCORDANCE ANALYSIS
 --------------------
 Significance concordance:
-  • Both significant: 421/567 (74.3%)
-  • Original only: 136 (24.0%)
+  • Both significant: 542/603 (89.9%)
+  • Original only: 60 (10.0%)
   • Balanced only: 0 (0.0%)
-  • Neither: 10 (1.8%)
+  • Neither: 1 (0.2%)
 
-Effect size correlation: r = 0.954
-P-value correlation: r = 0.952
+Effect size correlation: r = 0.929
+P-value correlation: r = 0.874
 
 TOP 10 SPECIES - ORIGINAL RANKING
 ----------------------------------
 
-1. s__Limnohabitans_sp_Rim47
-   Original: p=2.17e-102, effect=15.25 CLR
-   Balanced: p=9.28e-28, effect=15.10 CLR, rank=436, sig=YES
+1. s__Limnohabitans_sp_G3_2
+   Original: p=9.83e-137, effect=12.38 CLR
+   Balanced: p=8.98e-34, effect=12.48 CLR, rank=439, sig=YES
 
-2. s__Candidatus_Planktophila_sulfonica
-   Original: p=3.45e-92, effect=13.64 CLR
-   Balanced: p=4.03e-25, effect=13.49 CLR, rank=96, sig=YES
+2. s__Polynucleobacter_sp_es_MAR_4
+   Original: p=1.65e-133, effect=11.52 CLR
+   Balanced: p=7.53e-35, effect=11.61 CLR, rank=511, sig=YES
 
-3. s__Limnohabitans_sp_63ED37_2
-   Original: p=2.63e-91, effect=13.28 CLR
-   Balanced: p=2.73e-25, effect=13.13 CLR, rank=432, sig=YES
+3. s__Candidatus_Methylopumilus_universalis
+   Original: p=8.25e-131, effect=11.83 CLR
+   Balanced: p=2.21e-32, effect=11.92 CLR, rank=89, sig=YES
 
-4. s__Limnohabitans_sp_G3_2
-   Original: p=7.82e-89, effect=12.85 CLR
-   Balanced: p=9.12e-25, effect=12.70 CLR, rank=433, sig=YES
+4. s__Candidatus_Planktophila_vernalis
+   Original: p=1.13e-125, effect=11.47 CLR
+   Balanced: p=7.24e-31, effect=11.56 CLR, rank=100, sig=YES
 
-5. s__GGB46525_SGB64386
-   Original: p=5.57e-87, effect=12.43 CLR
-   Balanced: p=1.45e-24, effect=12.29 CLR, rank=312, sig=YES
+5. s__Limnohabitans_sp_Rim47
+   Original: p=9.11e-123, effect=14.78 CLR
+   Balanced: p=1.24e-37, effect=14.88 CLR, rank=446, sig=YES
 
-6. s__Limnohabitans_sp_2KL_3
-   Original: p=1.03e-86, effect=12.49 CLR
-   Balanced: p=2.65e-24, effect=12.35 CLR, rank=431, sig=YES
+6. s__GGB34754_SGB82226
+   Original: p=2.30e-121, effect=11.24 CLR
+   Balanced: p=1.88e-29, effect=11.33 CLR, rank=219, sig=YES
 
-7. s__Polynucleobacter_sp_es_MAR_4
-   Original: p=1.52e-86, effect=11.98 CLR
-   Balanced: p=2.44e-25, effect=11.84 CLR, rank=480, sig=YES
+7. s__GGB25723_SGB106723
+   Original: p=1.19e-118, effect=10.93 CLR
+   Balanced: p=5.28e-29, effect=11.02 CLR, rank=187, sig=YES
 
-8. s__Limnohabitans_sp_Rim11
-   Original: p=5.54e-86, effect=12.49 CLR
-   Balanced: p=6.49e-24, effect=12.34 CLR, rank=435, sig=YES
+8. s__GGB34383_SGB60872
+   Original: p=1.81e-113, effect=10.67 CLR
+   Balanced: p=2.50e-27, effect=10.76 CLR, rank=218, sig=YES
 
-9. s__Candidatus_Methylopumilus_universalis
-   Original: p=6.02e-85, effect=12.29 CLR
-   Balanced: p=9.77e-24, effect=12.14 CLR, rank=90, sig=YES
+9. s__Limnohabitans_sp_2KL_3
+   Original: p=5.54e-104, effect=12.03 CLR
+   Balanced: p=3.66e-33, effect=12.12 CLR, rank=437, sig=YES
 
-10. s__Polynucleobacter_sp_MWH_CaK5
-   Original: p=6.27e-85, effect=12.30 CLR
-   Balanced: p=1.03e-23, effect=12.15 CLR, rank=478, sig=YES
+10. s__Limnohabitans_sp_63ED37_2
+   Original: p=1.33e-102, effect=12.82 CLR
+   Balanced: p=1.92e-34, effect=12.91 CLR, rank=438, sig=YES
 
 
 KEY FINDINGS
 ------------
-1. Significance rate decreased from 98.2% → 74.3% with balanced samples
-   • Expected due to reduced statistical power (209 → 48 samples)
+1. Significance rate decreased from 99.8% → 89.9% with balanced samples
+    • Expected due to reduced statistical power (295 → 60 samples)
 
-2. Concordance: 74.3% of species significant in BOTH analyses
+2. Concordance: 89.9% of species significant in BOTH analyses
    • Indicates robust biological signals
    • Species significant in both are high-confidence biomarkers
 
-3. Effect size correlation: r = 0.954
+3. Effect size correlation: r = 0.929
    • Strong correlation
    • Effect sizes highly consistent between analyses
 
-4. P-value correlation: r = 0.952
+4. P-value correlation: r = 0.874
    • Strong correlation
    • Rank order of species highly preserved
 
@@ -111,14 +116,14 @@ Strong concordance and high correlation indicate that original findings are robu
 
 RECOMMENDATION
 --------------
-✓ Original results are robust - proceed with high-powered (n=209) analysis.
+✓ Original results are robust - proceed with high-powered (n=295) analysis.
 ✓ Species significant in both analyses are high-confidence biomarkers.
 ✓ Sample size imbalance did not meaningfully distort findings.
 
 
 FILES GENERATED
 ---------------
-• abundance_clr_balanced.csv - Balanced CLR data (48 samples)
+• abundance_clr_balanced.csv - Balanced CLR data (60 samples)
 • metadata_balanced.csv - Balanced metadata
 • association_results_balanced_all.csv - All species results (balanced)
 • association_results_balanced_significant.csv - Significant species only
@@ -127,4 +132,4 @@ FILES GENERATED
 • 02_top20_comparison.png - Top species comparison
 • sensitivity_report.txt - This report
 
-Analysis completed: 2026-02-22 13:09:33
+Analysis completed: 2026-02-26 15:04:14

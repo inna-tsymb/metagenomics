@@ -11,15 +11,15 @@ associations in microbiome data:
 KEY FINDINGS:
 
 1. OVERALL CONCORDANCE:
-   - Both methods significant: 551 species (97.0%)
-   - Linear only: 6 species (1.1%)
-   - Logistic only: 9 species (1.6%)
+   - Both methods significant: 602 species (97.0%)
+   - Linear only: 0 species (1.1%)
+   - Logistic only: 1 species (1.6%)
    
    ➜ Interpretation: Methods are highly concordant, suggesting robust associations.
 
 2. STRENGTH-OF-EVIDENCE CORRELATION:
-   - P-value correlation: r = 0.0488 (weak)
-   - Effect size correlation: r = 0.2353 (weak)
+   - P-value correlation: r = -0.0278 (weak)
+   - Effect size correlation: r = -0.0468 (weak)
    
    ➜ Interpretation: Methods measure different aspects - abundance vs presence. Weak
       correlation expected because they quantify different phenomena.
@@ -51,17 +51,17 @@ KEY FINDINGS:
 5. SPECIES-SPECIFIC PATTERNS:
 
    Pattern A: Linear ✓, Logistic ✓ (Abundance + Presence effects)
-   - Most common (551 species)
+   - Most common (602 species)
    - Species shows both abundance shift AND presence pattern
    - Example interpretation: Species is enriched AND more prevalent in group
    
    Pattern B: Linear ✓, Logistic ✗ (Abundance only)
-   - Rare (6 species)
+   - Rare (0 species)
    - Species shifts in abundance but maintains similar presence
    - Example: Species present in 60-80% of all groups, but abundant only in one
    
    Pattern C: Linear ✗, Logistic ✓ (Presence only)
-   - Rare (9 species)
+   - Rare (1 species)
    - Species shows presence pattern but similar mean abundance
    - Example: Species present 100% vs 50% but similar abundance when present
 

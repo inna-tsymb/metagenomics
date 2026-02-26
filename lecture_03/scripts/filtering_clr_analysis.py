@@ -34,7 +34,8 @@ WASTEWATER_STUDIES = [
     'Schulz_2017_wastewater', 
     'Rowe_2017_hospital_wastewater', 
     'Chu_2017_sludge',
-    'Lekunberri_2018_river_wastewater'
+    'Lekunberri_2018_river_wastewater',
+    'Chopyk_2020_pond'
 ]
 
 # Filtering thresholds

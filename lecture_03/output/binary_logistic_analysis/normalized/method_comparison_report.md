@@ -1,22 +1,14 @@
 # Linear vs Logistic Regression: Method Comparison
 
-## Update (2026-02-22): Dual-Mode Availability
-
-- This report is aligned with two execution modes: **normalized** and **non_normalized**.
-- Normalized mode applies lecture_02-style cohort balancing: **Schulz_2017_wastewater -> n=20**.
-- Non-normalized mode preserves original cohort sizes for impact comparison.
-- Full artifacts (CSV, PNG, TXT/MD reports) are available in mode-specific output folders.
-- Re-run all 03/04 dual-mode analyses with: `./run_all_dual_mode.sh`
-
 ## Summary Statistics
 
 | Metric | Value |
 |--------|-------|
-| **Both methods significant** | 708 species (97.0%) |
-| **Linear only significant** | 49 species (1.1%) |
-| **Logistic only significant** | 90 species (1.6%) |
-| **P-value correlation** | r = -0.0177 |
-| **Effect size correlation** | r = 0.0835 |
+| **Both methods significant** | 729 species (97.0%) |
+| **Linear only significant** | 6 species (1.1%) |
+| **Logistic only significant** | 11 species (1.6%) |
+| **P-value correlation** | r = -0.0147 |
+| **Effect size correlation** | r = 0.0101 |
 
 ## Key Findings
 

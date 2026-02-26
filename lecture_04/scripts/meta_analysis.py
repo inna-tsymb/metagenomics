@@ -3,14 +3,14 @@
 Meta-Analysis: Multi-Cohort Microbiome Analysis
 ================================================
 Leverages processed data from lecture_02 and lecture_03 to:
-1. Load already-processed CLR data from lecture_03 (4 cohorts, 567 species)
+1. Load already-processed CLR data from lecture_03 (core wastewater cohorts)
 2. Optionally add additional cohorts from raw data
 3. Check for batch effects across cohorts
 4. Perform multi-cohort meta-analysis
 5. Validate and extend findings from previous lectures
 
 Strategy: 
-- Batch 1: Lecture_03 processed data (Schulz, Chu, Rowe, Lekunberri)
+- Batch 1: Lecture_03 processed data (Schulz, Chu, Rowe, Lekunberri, Chopyk)
 - Batch 2 (optional): Additional wastewater cohorts from lecture_02
 - Fixed-effects meta-analysis with batch effect assessment
 """
@@ -38,7 +38,10 @@ warnings.filterwarnings('ignore')
 # Input files - use already processed data!
 LECTURE03_CLR = '../lecture_03/output/filtering_clr_analysis/abundance_clr_aligned.csv'
 LECTURE03_METADATA = '../lecture_03/output/filtering_clr_analysis/metadata_aligned.csv'
-LECTURE03_ASSOCIATION = '../lecture_03/output/association_analysis/association_results_all.csv'
+LECTURE03_ASSOCIATION = os.getenv(
+    'LECTURE03_ASSOCIATION',
+    '../lecture_03/output/association_analysis/association_results_all.csv'
+)
 
 # Optional: Additional cohorts from raw data
 RAW_ABUNDANCE_FILE = '../lecture_02/input/environmental_metaphlan4_2026-02-06.tsv'
@@ -83,7 +86,8 @@ CORE_COHORTS = [
     'Schulz_2017_wastewater',
     'Chu_2017_sludge',
     'Rowe_2017_hospital_wastewater',
-    'Lekunberri_2018_river_wastewater'
+    'Lekunberri_2018_river_wastewater',
+    'Chopyk_2020_pond'
 ]
 SELECTED_COHORTS = list(dict.fromkeys(CORE_COHORTS + ADDITIONAL_COHORTS))
 
@@ -107,7 +111,7 @@ print("="*80)
 print("META-ANALYSIS: MULTI-COHORT MICROBIOME STUDY")
 print("="*80)
 print("\nUsing Processed Data from Previous Lectures:")
-print(f"  • Lecture_03: Pre-processed CLR data (4 wastewater cohorts)")
+print(f"  • Lecture_03: Pre-processed CLR data ({len(CORE_COHORTS)} wastewater cohorts)")
 print(f"  • Additional cohorts: {len(ADDITIONAL_COHORTS)}")
 
 # Create output directory
@@ -192,6 +196,15 @@ abundance_wide = abundance_filtered.pivot(
     values='rel_abund'
 ).fillna(0)
 print(f"  Wide format: {abundance_wide.shape[0]} samples × {abundance_wide.shape[1]} species")
+
+# Ensure metadata and abundance are perfectly aligned after pivoting
+common_samples = abundance_wide.index.intersection(metadata_filtered.index)
+if len(common_samples) < len(metadata_filtered):
+    n_missing = len(metadata_filtered) - len(common_samples)
+    print(f"  Removing {n_missing} metadata samples not present in abundance table")
+metadata_filtered = metadata_filtered.loc[common_samples].copy()
+abundance_wide = abundance_wide.loc[common_samples].copy()
+print(f"  ✓ Aligned dataset: {len(common_samples)} samples")
 
 print("\n[2.2] Checking species prevalence per cohort...")
 # For each cohort, calculate species prevalence
@@ -703,7 +716,7 @@ common_species = set()
 both_sig = set()
 correlation = np.nan
 try:
-    lecture03_results = pd.read_csv('../lecture_03/output/association_analysis/association_results_all.csv')
+    lecture03_results = pd.read_csv(LECTURE03_ASSOCIATION)
     print(f"  Loaded lecture_03 results: {len(lecture03_results)} species")
     
     # Find common species
@@ -828,7 +841,7 @@ for idx, row in top_species_df.iterrows():
     report_lines.append(f"   I² heterogeneity: {row['I2_heterogeneity']:.1f}%")
     report_lines.append(f"   Present in {row['n_cohorts']} cohorts")
 
-if 'both_sig' in locals():
+if len(common_species) > 0:
     report_lines.append(f"\n{'='*80}")
     report_lines.append("6. VALIDATION (vs LECTURE_03)")
     report_lines.append("="*80)

@@ -6,8 +6,8 @@ Re-run association analysis with downsampled cohorts to test robustness.
 
 Strategy:
 - Downsample all cohorts to n=12 (matching smallest cohort: Lekunberri)
-- Total: 48 samples (12 × 4 cohorts)
-- Compare results with original 209-sample analysis
+- Total: BALANCED_N × number of cohorts
+- Compare results with original analysis from input metadata
 - Assess concordance and effect size correlation
 """
 
@@ -107,6 +107,9 @@ print(f"  Cohort distribution:")
 for cohort, count in metadata_balanced['study_code'].value_counts().sort_index().items():
     print(f"    • {cohort}: {count} samples")
 
+n_original_samples = len(common_samples)
+n_balanced_samples = len(balanced_samples)
+
 # Save balanced datasets
 clr_balanced.to_csv(OUTPUT_DIR / 'abundance_clr_balanced.csv')
 metadata_balanced.to_csv(OUTPUT_DIR / 'metadata_balanced.csv')
@@ -188,7 +191,7 @@ print(f"    • Effect size range: {results_balanced['effect_size'].min():.2f} -
 # ============================================================================
 # STEP 4: COMPARE WITH ORIGINAL RESULTS
 # ============================================================================
-print("\nSTEP 4: COMPARE WITH ORIGINAL (n=209) RESULTS")
+print("\nSTEP 4: COMPARE WITH ORIGINAL RESULTS")
 print("-" * 70)
 
 # Load original results
@@ -206,7 +209,7 @@ if 'sig_fdr' in results_original.columns and 'significant' not in results_origin
 n_sig_original = results_original['significant'].sum()
 pct_sig_original = (n_sig_original / len(results_original)) * 100
 
-print(f"  Results (original n=209):")
+print(f"  Results (original n={n_original_samples}):")
 print(f"    • Species tested: {len(results_original)}")
 print(f"    • Significant (FDR<0.05): {n_sig_original}/{len(results_original)} ({pct_sig_original:.1f}%)")
 
@@ -269,8 +272,8 @@ ax.scatter(comparison['effect_size_original'],
 ax.plot([0, comparison['effect_size_original'].max()],
         [0, comparison['effect_size_original'].max()],
         'k--', lw=1, alpha=0.5, label='y=x')
-ax.set_xlabel('Effect Size - Original (n=209)', fontsize=10)
-ax.set_ylabel('Effect Size - Balanced (n=48)', fontsize=10)
+ax.set_xlabel(f'Effect Size - Original (n={n_original_samples})', fontsize=10)
+ax.set_ylabel(f'Effect Size - Balanced (n={n_balanced_samples})', fontsize=10)
 ax.set_title(f'A) Effect Size Correlation (r={eff_corr:.3f})', fontsize=11, fontweight='bold')
 ax.legend(['y=x', 'Both sig', 'Not both'], fontsize=8)
 ax.grid(True, alpha=0.3)
@@ -282,8 +285,8 @@ ax.scatter(comparison['log_p_original'],
           alpha=0.5, s=20, c=colors, edgecolors='none')
 max_val = max(comparison['log_p_original'].max(), comparison['log_p_balanced'].max())
 ax.plot([0, max_val], [0, max_val], 'k--', lw=1, alpha=0.5)
-ax.set_xlabel('-log10(p) - Original (n=209)', fontsize=10)
-ax.set_ylabel('-log10(p) - Balanced (n=48)', fontsize=10)
+ax.set_xlabel(f'-log10(p) - Original (n={n_original_samples})', fontsize=10)
+ax.set_ylabel(f'-log10(p) - Balanced (n={n_balanced_samples})', fontsize=10)
 ax.set_title(f'B) P-value Correlation (r={p_corr:.3f})', fontsize=11, fontweight='bold')
 ax.grid(True, alpha=0.3)
 
@@ -305,7 +308,7 @@ for bar, count in zip(bars, counts):
 
 # Panel D: Significance rate comparison
 ax = axes[1, 1]
-datasets = ['Original\n(n=209)', 'Balanced\n(n=48)']
+datasets = [f'Original\n(n={n_original_samples})', f'Balanced\n(n={n_balanced_samples})']
 sig_rates = [pct_sig_original, pct_sig_balanced]
 bars = ax.bar(datasets, sig_rates, color=['#9b59b6', '#e67e22'], alpha=0.7, edgecolor='black', linewidth=1)
 ax.set_ylabel('% Significant Species (FDR<0.05)', fontsize=10)
@@ -369,9 +372,9 @@ species_short = [s.replace('s__', '').replace('_', ' ')[:30] for s in top_comp_d
 y_pos = np.arange(len(species_short))
 
 ax.barh(y_pos - 0.2, top_comp_df['orig_rank'], height=0.4, 
-        color='#9b59b6', alpha=0.7, label='Original (n=209)')
+    color='#9b59b6', alpha=0.7, label=f'Original (n={n_original_samples})')
 ax.barh(y_pos + 0.2, top_comp_df['bal_rank'], height=0.4,
-        color='#e67e22', alpha=0.7, label='Balanced (n=48)')
+    color='#e67e22', alpha=0.7, label=f'Balanced (n={n_balanced_samples})')
 
 ax.set_yticks(y_pos)
 ax.set_yticklabels(species_short, fontsize=8)
@@ -384,9 +387,9 @@ ax.grid(axis='x', alpha=0.3)
 # Panel B: Effect size comparison
 ax = axes[1]
 ax.barh(y_pos - 0.2, top_comp_df['orig_effect'], height=0.4,
-        color='#9b59b6', alpha=0.7, label='Original (n=209)')
+    color='#9b59b6', alpha=0.7, label=f'Original (n={n_original_samples})')
 ax.barh(y_pos + 0.2, top_comp_df['bal_effect'], height=0.4,
-        color='#e67e22', alpha=0.7, label='Balanced (n=48)')
+    color='#e67e22', alpha=0.7, label=f'Balanced (n={n_balanced_samples})')
 
 ax.set_yticks(y_pos)
 ax.set_yticklabels(species_short, fontsize=8)
@@ -406,6 +409,17 @@ plt.close()
 print("\nSTEP 6: GENERATE SUMMARY REPORT")
 print("-" * 70)
 
+original_cohort_lines = []
+for cohort, count in cohort_counts.sort_index().items():
+    pct = (count / n_original_samples) * 100 if n_original_samples else 0
+    original_cohort_lines.append(f"  • {cohort}: {count} samples ({pct:.1f}%)")
+
+balanced_cohort_counts = metadata_balanced['study_code'].value_counts().sort_index()
+balanced_cohort_lines = []
+for cohort, count in balanced_cohort_counts.items():
+    pct = (count / n_balanced_samples) * 100 if n_balanced_samples else 0
+    balanced_cohort_lines.append(f"  • {cohort}: {count} samples ({pct:.1f}%)")
+
 report = f"""SENSITIVITY ANALYSIS REPORT: BALANCED COHORTS
 {'='*70}
 
@@ -417,26 +431,23 @@ by downsampling all cohorts to equal size (n={BALANCED_N}).
 SAMPLE SIZE COMPARISON
 ---------------------
 Original dataset:
-  • Schulz_2017_wastewater: {cohort_counts.get('Schulz_2017_wastewater', 0)} samples (61%)
-  • Chu_2017_sludge: {cohort_counts.get('Chu_2017_sludge', 0)} samples (23%)
-  • Rowe_2017_hospital_wastewater: {cohort_counts.get('Rowe_2017_hospital_wastewater', 0)} samples (10%)
-  • Lekunberri_2018_river_wastewater: {cohort_counts.get('Lekunberri_2018_river_wastewater', 0)} samples (6%)
-  Total: {len(common_samples)} samples
+{chr(10).join(original_cohort_lines)}
+    Total: {n_original_samples} samples
   Imbalance ratio: {cohort_counts.max() / cohort_counts.min():.1f}x
 
 Balanced dataset:
-  • All cohorts: {BALANCED_N} samples each (25%)
-  Total: {len(balanced_samples)} samples
+{chr(10).join(balanced_cohort_lines)}
+    Total: {n_balanced_samples} samples
   Imbalance ratio: 1.0x (perfectly balanced)
 
 ASSOCIATION ANALYSIS RESULTS
 -----------------------------
-Original (n={len(common_samples)}):
+Original (n={n_original_samples}):
   • Species tested: {len(results_original)}
   • Significant (FDR<0.05): {n_sig_original}/{len(results_original)} ({pct_sig_original:.1f}%)
   • Effect size range: {results_original['effect_size'].min():.2f} - {results_original['effect_size'].max():.2f} CLR
 
-Balanced (n={len(balanced_samples)}):
+Balanced (n={n_balanced_samples}):
   • Species tested: {len(results_balanced)}
   • Significant (FDR<0.05): {n_sig_balanced}/{len(results_balanced)} ({pct_sig_balanced:.1f}%)
   • Effect size range: {results_balanced['effect_size'].min():.2f} - {results_balanced['effect_size'].max():.2f} CLR
@@ -483,7 +494,7 @@ report += f"""
 KEY FINDINGS
 ------------
 1. Significance rate decreased from {pct_sig_original:.1f}% → {pct_sig_balanced:.1f}% with balanced samples
-   • Expected due to reduced statistical power ({len(common_samples)} → {len(balanced_samples)} samples)
+    • Expected due to reduced statistical power ({n_original_samples} → {n_balanced_samples} samples)
 
 2. Concordance: {both_sig/len(comparison)*100:.1f}% of species significant in BOTH analyses
    • Indicates robust biological signals
@@ -506,7 +517,7 @@ RECOMMENDATION
 """
 
 if both_sig/len(comparison) > 0.7 and eff_corr > 0.7:
-    report += "✓ Original results are robust - proceed with high-powered (n=209) analysis.\n"
+    report += f"✓ Original results are robust - proceed with high-powered (n={n_original_samples}) analysis.\n"
     report += "✓ Species significant in both analyses are high-confidence biomarkers.\n"
     report += "✓ Sample size imbalance did not meaningfully distort findings.\n"
 elif both_sig/len(comparison) > 0.5:
@@ -522,7 +533,7 @@ report += f"""
 
 FILES GENERATED
 ---------------
-• abundance_clr_balanced.csv - Balanced CLR data ({len(balanced_samples)} samples)
+• abundance_clr_balanced.csv - Balanced CLR data ({n_balanced_samples} samples)
 • metadata_balanced.csv - Balanced metadata
 • association_results_balanced_all.csv - All species results (balanced)
 • association_results_balanced_significant.csv - Significant species only
